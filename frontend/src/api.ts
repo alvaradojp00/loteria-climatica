@@ -1,7 +1,10 @@
 /** All HTTP in one place, so components stay about the UI. */
 
+import type { Lang } from "./i18n";
+
 const BASE = import.meta.env.VITE_API_URL ?? "http://127.0.0.1:8010";
 
+// re-exported so components can take both the client and the type from here
 export type { Lang } from "./i18n";
 export interface Bilingual { en: string; es: string }
 
