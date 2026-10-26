@@ -1,0 +1,117 @@
+{
+  "brief_id": "2026-10-26",
+  "period_start": "2026-10-12",
+  "period_end": "2026-10-26",
+  "adapter_used": "fixture",
+  "toplines": [
+    {
+      "headline": {
+        "en": "Climate measures are pointless and bring new risks",
+        "es": "Las medidas climáticas no sirven y además traen riesgos"
+      },
+      "what_is_claimed": {
+        "en": "The messages portray nearby solar panels as a blackout risk, use China’s emissions to argue that local action is pointless, and treat today’s heat as nothing new. They appear in Spanish on Facebook, TikTok and WhatsApp, as short warnings and comparisons.",
+        "es": "Los mensajes presentan los paneles solares del barrio como riesgo de apagón, comparan las emisiones con las de China para decir que actuar aquí no sirve y tratan el calor de ahora como algo de siempre. Aparecen en español en Facebook, TikTok y WhatsApp, en forma de alertas y comparaciones breves."
+      },
+      "tactic": "Responsibility shifting / Desvío de responsabilidad; technically true but incomplete / Cierto pero incompleto",
+      "prebunk": {
+        "en": "Yes, China emits more overall, but that doesn’t make caring for our families here pointless.",
+        "es": "Sí, China emite más en total, pero eso no vuelve inútil cuidar a los nuestros."
+      },
+      "frame": {
+        "frame": "family",
+        "measured_lift": 6.0,
+        "audience_note": "EN: General mixed audience; no measured backlash in any subgroup. On naturalness, strongest measured lifts included Democrats (+15), ages 35–54 (+13), and urban respondents (+12). ES: Público general mixto; no se midió rechazo en ningún subgrupo. En naturalidad, los mayores aumentos medidos incluyeron a demócratas (+15), personas de 35–54 años (+13) y residentes urbanos (+12).",
+        "rationale": "EN: Family is the assigned frame, with a measured lift of 6.0, and fits claims about household safety and whether local action matters. ES: La familia es el marco indicado y tuvo un aumento medido de 6.0; además, encaja con los mensajes sobre la seguridad del hogar y si las acciones locales sirven.",
+        "rejected": [
+          "EN: Health and economy/jobs were not selected; this batch provides no comparative lift for those frames. ES: No se eligieron salud ni economía/empleo; este lote no aporta aumentos medidos comparables para esos marcos.",
+          "EN: Villain was not selected because the supplied frame is family and there is no comparative lift evidence for villain framing. ES: No se eligió villano porque el marco indicado es familia y no hay datos comparables de aumento para ese enfoque."
+        ]
+      },
+      "covering_card": null,
+      "gap_id": "gap_boletin_nada",
+      "reading": [
+        {
+          "claim": "EN: GreenLatinos published this report on a global Spanish-language climate disinformation network. ES: GreenLatinos publicó este informe sobre una red global de desinformación climática en español.",
+          "source_name": "GreenLatinos — Rumores Renovables: report exposing a global Spanish-language climate disinformation network",
+          "url": "https://www.greenlatinos.org/rumores-renovables-new-report-exposes-global-spanish-climate-disinformation-network/",
+          "excerpt": "",
+          "retrieved_at": "2026-10-26T18:23:22+00:00"
+        }
+      ]
+    },
+    {
+      "headline": {
+        "en": "Scientists exaggerate climate crisis and hide wildfire causes",
+        "es": "Los científicos exageran la crisis y ocultan causas de incendios"
+      },
+      "what_is_claimed": {
+        "en": "The messages allege that climate scientists exaggerate the crisis for funding and that linking fires to climate is meant to scare people. They circulate in Spanish on X posts and YouTube videos.",
+        "es": "Los mensajes dicen que la financiación lleva a la ciencia a exagerar la crisis y que relacionar los incendios con el clima busca asustar. Circulan en español en publicaciones de X y videos de YouTube."
+      },
+      "tactic": "Attack the messenger / Ataque al mensajero",
+      "prebunk": {
+        "en": "Yes, scientists receive funding, but that doesn’t mean anyone tells them what to find.",
+        "es": "Sí, los científicos reciben fondos, pero eso no significa que alguien les dicte qué encontrar."
+      },
+      "frame": {
+        "frame": "family",
+        "measured_lift": 6.0,
+        "audience_note": "EN: General mixed audience; no measured backlash in any subgroup. On naturalness, strongest measured lifts included Democrats (+15), ages 35–54 (+13), and urban respondents (+12). ES: Público general mixto; no se midió rechazo en ningún subgrupo. En naturalidad, los mayores aumentos medidos incluyeron a demócratas (+15), personas de 35–54 años (+13) y residentes urbanos (+12).",
+        "rationale": "EN: Family is the assigned frame, with a measured lift of 6.0; it keeps the discussion grounded in what affects people close to home. ES: La familia es el marco indicado y tuvo un aumento medido de 6.0; permite aterrizar la conversación en lo que afecta a quienes tenemos cerca.",
+        "rejected": [
+          "EN: Health and economy/jobs were not selected; this batch provides no comparative lift for those frames. ES: No se eligieron salud ni economía/empleo; este lote no aporta aumentos medidos comparables para esos marcos.",
+          "EN: Villain was not selected because the supplied frame is family and there is no comparative lift evidence for villain framing. ES: No se eligió villano porque el marco indicado es familia y no hay datos comparables de aumento para ese enfoque."
+        ]
+      },
+      "covering_card": "51",
+      "gap_id": "wildfire-climate-attribution",
+      "reading": [
+        {
+          "claim": "EN: Friends of the Earth published a report about extreme-weather disinformation in Latin America. ES: Friends of the Earth publicó un informe sobre desinformación relacionada con fenómenos meteorológicos extremos en América Latina.",
+          "source_name": "Friends of the Earth — Report: extreme weather disinformation in Latin America",
+          "url": "https://foe.org/news/report-extreme-weather-latam/",
+          "excerpt": "",
+          "retrieved_at": "2026-10-26T18:23:22+00:00"
+        }
+      ]
+    },
+    {
+      "headline": {
+        "en": "Heat protections threaten jobs, while tap water is safe",
+        "es": "Reglas contra el calor amenazan empleos; el agua es segura"
+      },
+      "what_is_claimed": {
+        "en": "The claims frame heat breaks as a cause of job losses and use Flint as proof that tap water elsewhere is safe. They circulate in Spanish on Facebook and WhatsApp, in brief messages that turn one local case into a broad assurance.",
+        "es": "Las afirmaciones presentan los descansos por calor como causa de despidos y usan Flint como prueba de que el agua de la llave en otros lugares es segura. Circulan en español en Facebook y WhatsApp, con mensajes breves que convierten un caso local en una garantía general."
+      },
+      "tactic": "Technically true but incomplete / Cierto pero incompleto",
+      "prebunk": {
+        "en": "Yes, Flint was real and breaks change the workday, but that doesn’t make all water safe or turn protection into layoffs.",
+        "es": "Sí, lo de Flint fue real y los descansos cambian la jornada, pero eso no vuelve segura toda el agua ni convierte la protección en despidos."
+      },
+      "frame": {
+        "frame": "family",
+        "measured_lift": 6.0,
+        "audience_note": "EN: General mixed audience; no measured backlash in any subgroup. On naturalness, strongest measured lifts included Democrats (+15), ages 35–54 (+13), and urban respondents (+12). ES: Público general mixto; no se midió rechazo en ningún subgrupo. En naturalidad, los mayores aumentos medidos incluyeron a demócratas (+15), personas de 35–54 años (+13) y residentes urbanos (+12).",
+        "rationale": "EN: Family is the assigned frame, with a measured lift of 6.0, and fits concerns about worker safety and water at home. ES: La familia es el marco indicado y tuvo un aumento medido de 6.0; encaja con las preocupaciones por la seguridad en el trabajo y el agua en casa.",
+        "rejected": [
+          "EN: Health and economy/jobs were not selected; this batch provides no comparative lift for those frames. ES: No se eligieron salud ni economía/empleo; este lote no aporta aumentos medidos comparables para esos marcos.",
+          "EN: Villain was not selected because the supplied frame is family and there is no comparative lift evidence for villain framing. ES: No se eligió villano porque el marco indicado es familia y no hay datos comparables de aumento para ese enfoque."
+        ]
+      },
+      "covering_card": "22",
+      "gap_id": null,
+      "reading": [
+        {
+          "claim": "EN: GreenLatinos maintains a page for its bilingual Climate Loteria myth-busting card campaign. ES: GreenLatinos tiene una página para su campaña bilingüe de cartas Lotería Climática, que aborda mitos sobre el clima.",
+          "source_name": "GreenLatinos — Climate Loteria: bilingual myth-busting card campaign",
+          "url": "https://www.greenlatinos.org/loteria/",
+          "excerpt": "",
+          "retrieved_at": "2026-10-26T18:23:22+00:00"
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-10-26T18:23:22+00:00"
+}

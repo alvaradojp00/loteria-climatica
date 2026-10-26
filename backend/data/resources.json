@@ -1,0 +1,503 @@
+{
+  "_note": "The reading library behind the deck. Every entry points at a specific page -- a report, a dataset, a tool -- never an organisation's front door. Checked 2026-10-26.",
+  "types": [
+    "report",
+    "polling",
+    "tool",
+    "coalition",
+    "fact-check",
+    "action"
+  ],
+  "topics": [
+    "spanish-language",
+    "latino",
+    "disinformation",
+    "extreme-weather",
+    "clean-energy",
+    "platforms",
+    "health",
+    "ai"
+  ],
+  "items": [
+    {
+      "id": "rumores-renovables",
+      "title": {
+        "en": "Rumores Renovables: the global Spanish-language climate disinformation network",
+        "es": "Rumores Renovables: la red global de desinformación climática en español"
+      },
+      "org": "GreenLatinos",
+      "url": "https://www.greenlatinos.org/rumores-renovables-new-report-exposes-global-spanish-climate-disinformation-network/",
+      "type": "report",
+      "topics": [
+        "spanish-language",
+        "disinformation",
+        "clean-energy"
+      ],
+      "why": {
+        "en": "The report that maps how anti-renewable narratives move through Spanish-language channels. The starting point for everything on this site.",
+        "es": "El reporte que traza cómo las narrativas en contra de las renovables se mueven por los canales en español. El punto de partida de todo este sitio."
+      },
+      "featured": true
+    },
+    {
+      "id": "gl-loteria",
+      "title": {
+        "en": "Climate Lotería — the original campaign",
+        "es": "Lotería Climática — la campaña original"
+      },
+      "org": "GreenLatinos / Intersectional Environmentalist",
+      "url": "https://www.greenlatinos.org/loteria/",
+      "type": "tool",
+      "topics": [
+        "spanish-language",
+        "latino",
+        "disinformation"
+      ],
+      "why": {
+        "en": "The twelve cards this deck grew from, on the organisation's own site.",
+        "es": "Las doce cartas de donde creció este mazo, en el sitio de la organización."
+      },
+      "featured": true
+    },
+    {
+      "id": "cp-how-info-reaches-latinos",
+      "title": {
+        "en": "How Climate and Energy Information Reaches Latinos",
+        "es": "Cómo llega la información sobre clima y energía a los latinos"
+      },
+      "org": "Climate Power En Acción",
+      "url": "https://climatepower.us/research-polling/how-climate-and-energy-information-reaches-latinos/",
+      "type": "polling",
+      "topics": [
+        "latino",
+        "spanish-language"
+      ],
+      "why": {
+        "en": "Where people actually get this information, which decides whether any of it lands.",
+        "es": "De dónde saca la gente esta información, que es lo que decide si algo de esto sirve."
+      },
+      "featured": true
+    },
+    {
+      "id": "cp-latino-data-centers",
+      "title": {
+        "en": "Latino Voters & Data Center Tracking Survey",
+        "es": "Encuesta: votantes latinos y centros de datos"
+      },
+      "org": "Climate Power",
+      "url": "https://climatepower.us/research-polling/latino-voters-data-center-tracking-survey/",
+      "type": "polling",
+      "topics": [
+        "latino",
+        "ai"
+      ],
+      "why": {
+        "en": "Data centres are arriving in our communities faster than the conversation about them. This tracks what Latino voters actually think.",
+        "es": "Los centros de datos están llegando a nuestras comunidades más rápido que la conversación. Esto mide qué piensan de verdad los votantes latinos."
+      }
+    },
+    {
+      "id": "cp-energy-affordability",
+      "title": {
+        "en": "What Voters Want to See in an Energy Affordability Agenda",
+        "es": "Qué quieren los votantes en una agenda de energía accesible"
+      },
+      "org": "Climate Power",
+      "url": "https://climatepower.us/research-polling/polling-memo-what-voters-want-to-see-in-an-energy-affordability-agenda-2/",
+      "type": "polling",
+      "topics": [
+        "clean-energy"
+      ],
+      "why": {
+        "en": "The electricity bill is where most of these arguments actually happen.",
+        "es": "El recibo de la luz es donde de verdad pasan estas discusiones."
+      }
+    },
+    {
+      "id": "foe-latam",
+      "title": {
+        "en": "Extreme weather disinformation in Latin America",
+        "es": "Desinformación sobre clima extremo en América Latina"
+      },
+      "org": "Friends of the Earth / Roots",
+      "url": "https://foe.org/news/report-extreme-weather-latam/",
+      "type": "report",
+      "topics": [
+        "extreme-weather",
+        "spanish-language",
+        "disinformation"
+      ],
+      "why": {
+        "en": "Disinformation spikes in the hours after a hurricane or flood, when people are frightened and checking is hardest.",
+        "es": "La desinformación se dispara en las horas después de un huracán o una inundación, cuando la gente tiene miedo y verificar es más difícil."
+      }
+    },
+    {
+      "id": "caad-summer-of-lies",
+      "title": {
+        "en": "A Summer of Extreme Lies: heatwave and wildfire disinformation in 2026",
+        "es": "Un verano de mentiras extremas: desinformación sobre calor e incendios en 2026"
+      },
+      "org": "Climate Action Against Disinformation",
+      "url": "https://caad.info/analysis/reports/summer-of-extreme-lies/",
+      "type": "report",
+      "topics": [
+        "extreme-weather",
+        "disinformation",
+        "health"
+      ],
+      "why": {
+        "en": "What got said during the heat and the fires, documented as it happened.",
+        "es": "Lo que se dijo durante el calor y los incendios, documentado mientras pasaba."
+      },
+      "featured": true
+    },
+    {
+      "id": "caad-rcp85",
+      "title": {
+        "en": "Spinning Renewable Success Into a Climate Conspiracy",
+        "es": "Convertir el éxito de las renovables en conspiración climática"
+      },
+      "org": "Climate Action Against Disinformation",
+      "url": "https://caad.info/analysis/reports/spinning-renewable-success-into-a-climate-conspiracy-co-opting-the-climate-science-story-of-rcp8-5/",
+      "type": "report",
+      "topics": [
+        "clean-energy",
+        "disinformation"
+      ],
+      "why": {
+        "en": "A worked example of technically-true-but-incomplete: real science, stripped of the context that gives it meaning.",
+        "es": "Un ejemplo trabajado de 'cierto pero incompleto': ciencia real, sin el contexto que le da sentido."
+      }
+    },
+    {
+      "id": "caad-ai",
+      "title": {
+        "en": "Actual Intelligence As AI Melts The Planet",
+        "es": "Inteligencia de verdad mientras la IA derrite el planeta"
+      },
+      "org": "Climate Action Against Disinformation",
+      "url": "https://caad.info/analysis/newsletters/actual-intelligence-as-ai-melts-the-planet/",
+      "type": "report",
+      "topics": [
+        "ai",
+        "disinformation"
+      ],
+      "why": {
+        "en": "The energy and water cost of the technology this very site runs on. Worth sitting with.",
+        "es": "El costo en energía y agua de la tecnología con la que funciona este mismo sitio. Vale la pena pensarlo."
+      }
+    },
+    {
+      "id": "caad-analysis",
+      "title": {
+        "en": "CAAD Resources & Analysis — the full library",
+        "es": "Recursos y análisis de CAAD — la biblioteca completa"
+      },
+      "org": "Climate Action Against Disinformation",
+      "url": "https://caad.info/analysis/",
+      "type": "coalition",
+      "topics": [
+        "disinformation",
+        "platforms"
+      ],
+      "why": {
+        "en": "A coalition of 120+ climate and anti-disinformation organisations, publishing monthly. If you only follow one, follow this.",
+        "es": "Una coalición de más de 120 organizaciones climáticas y contra la desinformación, que publica cada mes. Si vas a seguir una sola, que sea esta."
+      }
+    },
+    {
+      "id": "factchequeado",
+      "title": {
+        "en": "Factchequeado — fact-checking in Spanish for US audiences",
+        "es": "Factchequeado — verificación en español para EE. UU."
+      },
+      "org": "Factchequeado",
+      "url": "https://factchequeado.com/",
+      "type": "fact-check",
+      "topics": [
+        "spanish-language",
+        "latino",
+        "disinformation"
+      ],
+      "why": {
+        "en": "Built specifically for Spanish-speaking communities in the United States, including WhatsApp forwards. The closest thing to a comadre with a newsroom.",
+        "es": "Hecho específicamente para las comunidades hispanohablantes en Estados Unidos, incluyendo los reenvíos de WhatsApp. Lo más cercano a una comadre con sala de redacción."
+      },
+      "featured": true
+    },
+    {
+      "id": "maldita-clima",
+      "title": {
+        "en": "Maldita.es — climate fact-checks",
+        "es": "Maldita.es — verificaciones sobre el clima"
+      },
+      "org": "Maldita.es",
+      "url": "https://maldita.es/malditaciencia/",
+      "type": "fact-check",
+      "topics": [
+        "spanish-language",
+        "disinformation"
+      ],
+      "why": {
+        "en": "Spain-based, widely cited, and fast on the claims that cross the Atlantic into our group chats.",
+        "es": "Con sede en España, muy citada, y rápida con las afirmaciones que cruzan el Atlántico hasta nuestros chats."
+      }
+    },
+    {
+      "id": "chequeado",
+      "title": {
+        "en": "Chequeado — Latin America's fact-checking newsroom",
+        "es": "Chequeado — la redacción de verificación de América Latina"
+      },
+      "org": "Chequeado",
+      "url": "https://chequeado.com/",
+      "type": "fact-check",
+      "topics": [
+        "spanish-language",
+        "disinformation"
+      ],
+      "why": {
+        "en": "Argentina-based and regional. Useful when a claim arrives from family back home.",
+        "es": "Con sede en Argentina y alcance regional. Útil cuando una afirmación llega de la familia allá."
+      }
+    },
+    {
+      "id": "science-feedback",
+      "title": {
+        "en": "Science Feedback — scientists reviewing viral claims",
+        "es": "Science Feedback — científicos revisando afirmaciones virales"
+      },
+      "org": "Science Feedback (CAAD member)",
+      "url": "https://science.feedback.org/climate-feedback/",
+      "type": "fact-check",
+      "topics": [
+        "disinformation"
+      ],
+      "why": {
+        "en": "Working climate scientists annotate the specific article in front of you. Good when you need the actual paper.",
+        "es": "Científicos del clima anotan el artículo específico que tienes enfrente. Bueno cuando necesitas el estudio real."
+      }
+    },
+    {
+      "id": "ccdh",
+      "title": {
+        "en": "Center for Countering Digital Hate — climate denial research",
+        "es": "Center for Countering Digital Hate — investigación sobre negacionismo"
+      },
+      "org": "CCDH (CAAD member)",
+      "url": "https://counterhate.com/research/",
+      "type": "coalition",
+      "topics": [
+        "platforms",
+        "disinformation"
+      ],
+      "why": {
+        "en": "Traces who profits from this content and which platforms keep paying them.",
+        "es": "Rastrea quién gana dinero con este contenido y qué plataformas les siguen pagando."
+      }
+    },
+    {
+      "id": "influencemap",
+      "title": {
+        "en": "InfluenceMap — corporate climate lobbying",
+        "es": "InfluenceMap — cabildeo climático corporativo"
+      },
+      "org": "InfluenceMap (CAAD member)",
+      "url": "https://influencemap.org/",
+      "type": "coalition",
+      "topics": [
+        "disinformation",
+        "clean-energy"
+      ],
+      "why": {
+        "en": "Names the specific company behind a message. The Grow Progress study found naming a specific profiteer works far better than 'big oil' in the abstract.",
+        "es": "Nombra a la empresa específica detrás de un mensaje. El estudio de Grow Progress encontró que nombrar a un responsable específico funciona mucho mejor que 'las petroleras' en abstracto."
+      }
+    },
+    {
+      "id": "isd",
+      "title": {
+        "en": "Institute for Strategic Dialogue — climate disinformation",
+        "es": "Institute for Strategic Dialogue — desinformación climática"
+      },
+      "org": "ISD (CAAD member)",
+      "url": "https://www.isdglobal.org/issues/climate-disinformation/",
+      "type": "coalition",
+      "topics": [
+        "disinformation",
+        "platforms"
+      ],
+      "why": {
+        "en": "Studies how coordinated campaigns are actually run, across languages.",
+        "es": "Estudia cómo se organizan de verdad las campañas coordinadas, en varios idiomas."
+      }
+    },
+    {
+      "id": "ucs",
+      "title": {
+        "en": "Union of Concerned Scientists — disinformation and accountability",
+        "es": "Union of Concerned Scientists — desinformación y rendición de cuentas"
+      },
+      "org": "UCS (CAAD member)",
+      "url": "https://www.ucsusa.org/climate/disinformation",
+      "type": "coalition",
+      "topics": [
+        "disinformation",
+        "health"
+      ],
+      "why": {
+        "en": "Decades of documentation on what the fossil fuel industry knew and when.",
+        "es": "Décadas documentando qué sabía la industria de los combustibles fósiles y desde cuándo."
+      }
+    },
+    {
+      "id": "checkmyads",
+      "title": {
+        "en": "Check My Ads — defunding disinformation",
+        "es": "Check My Ads — cortarle el dinero a la desinformación"
+      },
+      "org": "Check My Ads (CAAD member)",
+      "url": "https://checkmyads.org/",
+      "type": "coalition",
+      "topics": [
+        "platforms",
+        "disinformation"
+      ],
+      "why": {
+        "en": "Follows the advertising money that keeps this content profitable.",
+        "es": "Sigue el dinero de la publicidad que mantiene rentable este contenido."
+      }
+    },
+    {
+      "id": "climate-defenders",
+      "title": {
+        "en": "Climate Defenders Action",
+        "es": "Climate Defenders Action"
+      },
+      "org": "Climate Defenders",
+      "url": "https://www.climatedefendersaction.org/involvement",
+      "type": "action",
+      "topics": [
+        "clean-energy",
+        "latino"
+      ],
+      "why": {
+        "en": "A multigenerational, multiracial organising home for people who want to do something in the street rather than online.",
+        "es": "Un espacio de organización multigeneracional y multirracial para quien quiere hacer algo en la calle y no solo en línea."
+      },
+      "featured": true
+    },
+    {
+      "id": "350",
+      "title": {
+        "en": "350.org — find a local group",
+        "es": "350.org — encuentra un grupo local"
+      },
+      "org": "350.org (CAAD member)",
+      "url": "https://350.org/get-involved/",
+      "type": "action",
+      "topics": [
+        "clean-energy"
+      ],
+      "why": {
+        "en": "Chapters almost everywhere, including places with no other climate organising.",
+        "es": "Grupos en casi todos lados, incluso en lugares donde no hay otra organización climática."
+      }
+    },
+    {
+      "id": "auto-16965903",
+      "title": {
+        "en": "Understanding and Addressing the Root Causes of Climate Change Disinformation: An Integrative Review",
+        "es": "Comprender y abordar las causas de fondo de la desinformación climática: una revisión integradora"
+      },
+      "org": "Climatic Change / Springer Nature",
+      "url": "https://www.haw-hamburg.de/fileadmin/LS/FTZ-NK/PDF/Publications/2026-Understanding_and_addressing_the_root_causes_of_climate_change_disinformation-_an_integrative_review__Climatic_Change.pdf",
+      "type": "report",
+      "topics": [
+        "platforms"
+      ],
+      "why": {
+        "en": "See how funding, misleading narratives and platform incentives reinforce one another—and why correcting individual posts alone may not be enough.",
+        "es": "Explica cómo se refuerzan entre sí el financiamiento, las narrativas engañosas y los incentivos de las plataformas, y por qué no basta con corregir publicaciones sueltas."
+      },
+      "pending": true,
+      "found_on": "2026-10-26",
+      "published": "2026-10-21"
+    },
+    {
+      "id": "auto-17340784",
+      "title": {
+        "en": "Watch out for a video blaming October’s Levante floods on artificial contrails",
+        "es": "Cuidado con el video que culpa a estelas artificiales de las inundaciones de octubre en el Levante"
+      },
+      "org": "Maldita.es",
+      "url": "https://maldita.es/desinfo/20261022/las-inundaciones-y-danas-que-han-afectado-el-levante-este-mes-de-octubre-han-sido-por-culpa-de-estelas-artificiales/",
+      "type": "fact-check",
+      "topics": [],
+      "why": {
+        "en": "Check a viral chemtrails claim against meteorologists’ explanations of how contrails form and why they cannot create torrential rain.",
+        "es": "Contrasta un bulo viral sobre estelas químicas con la explicación de especialistas sobre cómo se forman las estelas y por qué no pueden provocar lluvias torrenciales."
+      },
+      "pending": true,
+      "found_on": "2026-10-26",
+      "published": "2026-10-22"
+    },
+    {
+      "id": "auto-20592484",
+      "title": {
+        "en": "Energy Affordability in the Final Three Weeks of the 2026 Midterms",
+        "es": "El costo de la energía en las últimas tres semanas antes de las elecciones de 2026"
+      },
+      "org": "Climate Power",
+      "url": "https://climatepower.us/research-polling/energy-affordability-in-the-final-three-weeks-of-the-2026-midterms/",
+      "type": "polling",
+      "topics": [],
+      "why": {
+        "en": "See how battleground-district voters rank gas and utility costs among their top concerns; this poll is not Latino-specific.",
+        "es": "Muestra qué importancia dan los votantes de distritos competidos al costo de la gasolina y los servicios; esta encuesta no es específica de votantes latinos."
+      },
+      "pending": true,
+      "found_on": "2026-10-26",
+      "published": "2026-10-15"
+    }
+  ],
+  "reporting": [
+    {
+      "platform": "WhatsApp",
+      "en": "Hold the message, tap Report, pick a reason. Forwarding it is what spreads it — screenshot instead when you want to ask somebody about it.",
+      "es": "Mantén presionado el mensaje, toca Reportar y elige la razón. Reenviarlo es lo que lo esparce; mejor toma captura si quieres preguntarle a alguien.",
+      "note_en": "WhatsApp is end-to-end encrypted, so moderation happens at the account level, not the message level.",
+      "note_es": "WhatsApp está cifrado de extremo a extremo, así que la moderación es a nivel de cuenta, no de mensaje."
+    },
+    {
+      "platform": "Facebook / Instagram",
+      "en": "Three dots on the post → Report → False information.",
+      "es": "Los tres puntos en la publicación → Reportar → Información falsa.",
+      "note_en": "Spanish-language fact-checking coverage is thinner than English, so reports matter more here.",
+      "note_es": "La verificación en español es más escasa que en inglés, así que reportar importa más aquí."
+    },
+    {
+      "platform": "TikTok",
+      "en": "Share arrow → Report → Misleading information.",
+      "es": "Flecha de compartir → Reportar → Información engañosa.",
+      "note_en": "",
+      "note_es": ""
+    },
+    {
+      "platform": "YouTube",
+      "en": "Three dots under the video → Report → Misinformation.",
+      "es": "Tres puntos bajo el video → Denunciar → Información errónea.",
+      "note_en": "",
+      "note_es": ""
+    },
+    {
+      "platform": "X",
+      "en": "Three dots → Report post → It's misleading.",
+      "es": "Tres puntos → Reportar publicación → Es engañosa.",
+      "note_en": "",
+      "note_es": ""
+    }
+  ],
+  "last_sweep": "2026-10-26"
+}

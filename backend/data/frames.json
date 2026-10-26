@@ -1,0 +1,123 @@
+{
+  "study": {
+    "name": "GreenLatinos / Resource Media climate message test",
+    "tool": "Grow Progress",
+    "year": 2025,
+    "population": "Latinx adults in the United States",
+    "sample_size": 1797,
+    "design": "One placebo group received no message. One group received the opposition message only. Five groups received the opposition message first, then one of five value-framed messages. Topline results weighted by age, gender, education, and political affiliation.",
+    "confidence_notes": {
+      "persuasive": "90% confidence that the message moves the audience in the intended direction; statistically significant.",
+      "directional": "80% confidence; likely to shift in the right direction, more testing warranted.",
+      "insufficient": "Not enough of a shift, or not enough sample, to confirm a measurable impact."
+    },
+    "opposition_message": {
+      "headline": "Oil and natural gas: for our energy, our economy, our jobs",
+      "measured_effect": "Dropped agreement that 'climate change is just natural' is false by 6 points overall (48% -> 42%). Larger movement among Democrats (-16), women (-11), and low-income under $50k (-9). No measurable effect on the other two questions."
+    },
+    "citation": "GreenLatinos Grow Progress Message Test Report, 2025. Campaign created 2024-2025 with Intersectional Environmentalist."
+  },
+
+  "outcomes": {
+    "natural": "Say FALSE that climate change is a natural phenomenon humans have not affected",
+    "danger": "Say TRUE that climate change poses a serious danger to my community",
+    "economy": "Say TRUE that moving from fossil fuels to clean energy grows the economy and creates jobs"
+  },
+
+  "baselines": { "natural": 48, "natural_after_opposition": 42, "danger": 66, "economy": 55 },
+
+  "frames": {
+    "health": {
+      "label": "Health",
+      "headline": "Addressing climate change & extreme heat matters - for the health of our community",
+      "thesis": "Rising temperatures are a growing health threat, worst for children, elders, and people who work outdoors.",
+      "topline_lift": { "natural": 2, "danger": 11, "economy": 2 },
+      "best_for": ["danger"],
+      "persuasive_with": {
+        "danger": ["Conservative +22", "Men +18", "18-34 +17", "Suburban +17", "Did not vote +17", "Independent/Other +16", "High school or less +14", "$0-49k +11", "Voted Dem +10"],
+        "natural": ["Voted Dem +20", "Bachelor's degree+ +19"]
+      },
+      "directional_with": { "natural": ["Republican +13"], "economy": ["Conservative +12"] },
+      "backlash_with": { "natural": ["18-34 -11", "Voted Rep -12"], "economy": ["Liberal -16"] },
+      "verdict": "Strongest single frame overall. The measured best choice for any claim about danger, harm, heat, or health, and effective across more subgroups than any other frame."
+    },
+
+    "family": {
+      "label": "Family",
+      "headline": "Doing what we can for a safer climate - it's for our families' future",
+      "thesis": "Nothing matters more than the health, safety and well-being of your family and the chance to see them grow and thrive.",
+      "topline_lift": { "natural": 6, "danger": 7, "economy": 6 },
+      "best_for": ["natural", "economy"],
+      "persuasive_with": {
+        "natural": ["Voted Dem +15", "Age 35-54 +13", "Urban +12"],
+        "danger": ["$100k+ +20", "Men +18", "35-54 +14", "Some college +13", "Voted Dem +13", "$0-49k +12", "18-34 +11", "Democrat +10"],
+        "economy": ["$50-99k +12"]
+      },
+      "directional_with": { "natural": ["$100k+ +18", "Yes +10"], "danger": ["Conservative +13"], "economy": ["Republican +12", "Bachelor's degree+ +12"] },
+      "backlash_with": {},
+      "verdict": "The safe default. Highest topline lift on the 'just natural' claim and the only frame the study found with NO signs of backlash in any subgroup. Use when the audience is unknown or mixed."
+    },
+
+    "faith": {
+      "label": "Faith",
+      "headline": "Protecting God's creation means acting to protect our climate",
+      "thesis": "We have a responsibility to care for the Earth entrusted to us; protecting creation means breaking the cycle of burning fossil fuels.",
+      "topline_lift": { "natural": 5, "danger": 3, "economy": 2 },
+      "best_for": ["natural"],
+      "persuasive_with": {
+        "natural": ["Bachelor's degree+ +19", "Republican +18", "Women +12"],
+        "danger": ["Conservative +18", "Suburban +12"]
+      },
+      "directional_with": { "danger": ["$100k+ +16", "Voted Dem +7"], "economy": ["Conservative +14", "Republican +13", "Bachelor's degree+ +11", "$50-99k +10"] },
+      "backlash_with": {},
+      "verdict": "The measured best frame for audiences on the political right, with no observed backlash. Use when the audience leans conservative or religious, or when the claim involves stewardship and responsibility."
+    },
+
+    "economy_jobs": {
+      "label": "Economy + Jobs",
+      "headline": "Clean energy: powering good jobs and a safer climate",
+      "thesis": "Diversifying energy creates millions of high-paying secure jobs and strengthens the economy.",
+      "topline_lift": { "natural": 1, "danger": -2, "economy": 2 },
+      "best_for": [],
+      "persuasive_with": { "economy": ["Voted Dem +13"] },
+      "directional_with": { "natural": ["Republican +14", "Bachelor's degree+ +12", "Urban +9"] },
+      "backlash_with": {
+        "natural": ["Suburban -11"],
+        "danger": ["Bachelor's degree+ -10", "Moderate -13", "Voted Rep -15"],
+        "economy": ["Voted Rep -12", "$100k+ -17"]
+      },
+      "verdict": "Weak and risky. Negative topline on the danger claim and measurable backlash among moderates, Republican voters, suburban and high-income respondents. Do not use as a default. The study's conclusion was that more testing is needed to persuade on energy-transition economics at all."
+    },
+
+    "villain": {
+      "label": "Villain",
+      "headline": "The more they deny climate change, the more Big Oil profits soar",
+      "thesis": "Big oil and gas corporations and their owners knew the impact and misled the public.",
+      "topline_lift": { "natural": -1, "danger": 3, "economy": -4 },
+      "best_for": [],
+      "persuasive_with": { "natural": ["Republican +16"], "danger": ["Conservative +20", "Suburban +13"], "economy": ["Conservative +17"] },
+      "directional_with": { "natural": ["Bachelor's degree+ +14"], "danger": ["35-54 +10", "18-34 +9"] },
+      "backlash_with": {
+        "natural": ["Liberal -15"],
+        "economy": ["Democrat -9", "Urban -10", "Some college -12", "Moderate -14"]
+      },
+      "verdict": "Negative at topline on two of three outcomes. Real traction with conservatives, but the study explicitly paused on it because of weakness with wider audiences. Never a default. The report's own recommendation: naming a SPECIFIC corporation profiting at people's expense (for example a utility raising your bill) tests more widely effective than generic 'big oil execs'."
+    }
+  },
+
+  "selection_rules": [
+    "Default to FAMILY when the audience is unknown or mixed - it is the only frame with no measured backlash in any subgroup.",
+    "Use HEALTH for any claim about danger, heat, illness, children or elders - it has the largest measured lift of any frame (+11 on community danger).",
+    "Use FAITH when the audience leans conservative or religious - measured +18 with Republicans and +22-adjacent strength with conservatives, with no backlash observed.",
+    "Do NOT default to ECONOMY_JOBS or VILLAIN. Both measured negative at topline on at least one outcome and both show real backlash subgroups.",
+    "VILLAIN may be used only for an explicitly conservative audience, and only naming a specific profiting company rather than 'big oil' in the abstract.",
+    "Always record the chosen frame, its measured lift, and the frames you rejected."
+  ],
+
+  "takeaways": [
+    "Faith, health and family are the three values to connect with. They resonate to different degrees with different subgroups, but none is harmful or causes backlash.",
+    "Faith is most helpful with folks on the political right. Health and family are helpful across the political spectrum.",
+    "The health dangers of extreme heat are an effective way to help people see climate change as a serious threat to their community.",
+    "There is promise in making big oil executives into greedy villains with conservatives, but the weakness of that frame with wider audiences gives pause; naming specific profiteering corporations tests more widely effective."
+  ]
+}

@@ -1,0 +1,39 @@
+# secrets -- never commit a real key
+.env
+.env.local
+*.env.local
+
+# python
+backend/.venv/
+__pycache__/
+*.pyc
+backend/data/ledger.db
+
+# node
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# The original campaign artwork at print resolution: ~450 MB of 4x6 PNGs and
+# PDFs. The app serves assets/web/ (2.4 MB of downscaled JPEGs) and ships the
+# extracted text in backend/data/cards.json, so nothing at runtime needs these.
+# They are required only to re-run Genesis or make_web_art.py -- see
+# assets/README.md.
+assets/loteria-cards/
+
+# scratch
+output/preview/
+output/batch_run.log
+.DS_Store
+
+# Generated exports. Rebuild with `python export_deck.py` / `build_report.py`.
+# The evidence files the report cites (audit_trail.json, injection_demo.json)
+# are kept deliberately.
+output/*.pdf
+output/*.pptx
+output/*.log
+output/cards_png/
+output/shots/
+output/ref/
+output/_test*
+backend/data/*.db

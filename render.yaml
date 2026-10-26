@@ -1,0 +1,75 @@
+# Render blueprint — Lotería Climática
+#
+# Two services and a disk, per Lecture 8: a FastAPI web service for the
+# backend, a static site for the React frontend, and a persistent disk so the
+# subscriber list and the deck survive a redeploy.
+#
+# Deploy the backend first: the frontend needs its URL at build time.
+#
+# Secrets are NOT in this file. Set them in Render's dashboard:
+#   PORTKEY_API_KEY, ADMIN_PASSWORD  (and JUNKIPEDIA_API_KEY if entitled)
+
+services:
+  - type: web
+    name: loteria-backend
+    runtime: python
+    region: oregon
+    plan: starter            # free spins down after inactivity; starter stays warm
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    # Render injects $PORT; binding 0.0.0.0 is what makes it reachable
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    disk:
+      name: loteria-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12"
+      - key: DATA_DIR          # subscribers.db, ledger.db, cards.json
+        value: /var/data/data
+      - key: OUTPUT_DIR        # audit trail, briefs, exports
+        value: /var/data/output
+      - key: ALLOWED_ORIGINS   # set to the static site URL once it exists
+        value: https://loteria-climatica.onrender.com
+      - key: PORTKEY_API_KEY
+        sync: false            # set in the dashboard, never in git
+      - key: ADMIN_PASSWORD
+        sync: false
+
+  - type: web
+    name: loteria-climatica
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm ci && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://loteria-backend.onrender.com
+    routes:
+      # single-page app: every path serves index.html
+      - type: rewrite
+        source: /*
+        destination: /index.html
+
+# Scheduled work. Both write through DATA_DIR, so they share the disk with
+# the web service. Cron jobs are billed per run and are cheap at this cadence.
+#
+# Uncomment once the services above are live:
+#
+# jobs:
+#   - type: cron
+#     name: loteria-boletin
+#     runtime: python
+#     rootDir: backend
+#     schedule: "0 13 * * 1"          # Mondays 13:00 UTC
+#     buildCommand: pip install -r requirements.txt
+#     startCommand: python -m agents.boletin
+#   - type: cron
+#     name: loteria-librarian
+#     runtime: python
+#     rootDir: backend
+#     schedule: "0 14 * * 1"          # Mondays 14:00 UTC
+#     buildCommand: pip install -r requirements.txt
+#     startCommand: python -m agents.librarian

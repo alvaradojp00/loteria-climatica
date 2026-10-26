@@ -1,0 +1,102 @@
+{
+  "organizations": [
+    {
+      "key": "caad",
+      "name": "Climate Action Against Disinformation (CAAD)",
+      "url": "https://caad.info/",
+      "role": "Coalition of climate and anti-disinformation organisations that monitors and documents climate disinformation trends across platforms.",
+      "framing_note": "Frame claims the way CAAD does: name the tactic, document the pattern, cite the evidence. Avoid overstating certainty.",
+      "publications": [
+        {
+          "title": "CAAD reports and briefings on climate disinformation",
+          "url": "https://caad.info/analysis/",
+          "topics": ["platform policy", "ad networks", "COP disinformation", "denial narratives"]
+        }
+      ]
+    },
+    {
+      "key": "green-latinos",
+      "name": "GreenLatinos",
+      "url": "https://www.greenlatinos.org/",
+      "role": "National Latine environmental organisation. Its Climate Conexiones programme works specifically on Spanish-language climate disinformation.",
+      "framing_note": "Centre Latine communities as knowledgeable actors, never as passive victims. The organisation's own framing is 'Luchando por la Liberacion Ambiental'.",
+      "publications": [
+        {
+          "title": "Rumores Renovables: report exposing a global Spanish-language climate disinformation network",
+          "url": "https://www.greenlatinos.org/rumores-renovables-new-report-exposes-global-spanish-climate-disinformation-network/",
+          "topics": ["anti-renewable narratives", "Spanish-language networks", "WhatsApp", "coordinated messaging"]
+        },
+        {
+          "title": "Climate Loteria - bilingual myth-busting card campaign",
+          "url": "https://www.greenlatinos.org/loteria/",
+          "topics": ["heat", "methane", "plastic", "health", "just transition", "climate justice", "deforestation"]
+        }
+      ]
+    },
+    {
+      "key": "foe",
+      "name": "Friends of the Earth",
+      "url": "https://foe.org/",
+      "role": "Research, with Roots and Purpose, on disinformation that escalates during extreme weather events in Latin America.",
+      "framing_note": "Emphasise that non-English disinformation is more prevalent and less moderated than English-language disinformation.",
+      "publications": [
+        {
+          "title": "Report: extreme weather disinformation in Latin America",
+          "url": "https://foe.org/news/report-extreme-weather-latam/",
+          "topics": ["extreme weather", "hurricanes", "floods", "Latin America", "crisis disinformation"]
+        }
+      ]
+    },
+    {
+      "key": "climate-power",
+      "name": "Climate Power En Accion",
+      "url": "https://climatepower.us/about/en-accion/",
+      "role": "Spanish-language climate communications programme focused on clean energy, jobs and community benefits.",
+      "framing_note": "Lead with jobs, health and family benefits that are concrete and local rather than abstract climate targets.",
+      "publications": [
+        {
+          "title": "Climate Power En Accion - research and messaging resources",
+          "url": "https://climatepower.us/about/en-accion/",
+          "topics": ["clean energy jobs", "Latino voters", "energy costs"]
+        }
+      ]
+    },
+    {
+      "key": "resource-media",
+      "name": "Resource Media / Grow Progress message test",
+      "url": "https://www.resource-media.org/",
+      "role": "Ran the 2025 randomised message test with GreenLatinos on 1,797 Latinx adults that produced the measured value-frame data this project routes on.",
+      "framing_note": "The measured lifts in frames.json come from this study. Treat them as the ground truth for framing decisions.",
+      "publications": [
+        {
+          "title": "GreenLatinos Grow Progress Message Test Report (2025)",
+          "url": "https://www.resource-media.org/",
+          "topics": ["message testing", "value frames", "faith", "family", "health", "villain", "economy"]
+        }
+      ]
+    }
+  ],
+
+  "reporting_channels": [
+    {
+      "platform": "WhatsApp",
+      "how": "Hold the message, tap Report, and choose the reason. Forwarding it onward is what spreads it - screenshot instead when you want to ask someone about it.",
+      "note": "WhatsApp is end-to-end encrypted, so moderation happens at the account level rather than the message level."
+    },
+    {
+      "platform": "Facebook / Instagram",
+      "how": "Use the three-dot menu on the post, then Report, then False information.",
+      "note": "Spanish-language fact-checking coverage is thinner than English; reporting still matters."
+    },
+    {
+      "platform": "YouTube",
+      "how": "Three dots under the video, Report, Misinformation.",
+      "note": ""
+    },
+    {
+      "platform": "TikTok",
+      "how": "Share arrow, Report, Misleading information.",
+      "note": ""
+    }
+  ]
+}

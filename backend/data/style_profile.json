@@ -1,0 +1,211 @@
+{
+  "measured_from": [
+    "loteria-cards\\cards-01-06\\en\\print-4x6\\GreenLatinos-LoteriaCard-4x6in-Front-1-LaOladeCalor-English.png",
+    "loteria-cards\\cards-01-06\\en\\print-4x6\\GreenLatinos-LoteriaCard-4x6in-Back-1-LaOladeCalor-English.png",
+    "loteria-cards\\cards-01-06\\en\\print-4x6\\GreenLatinos-LoteriaCard-4x6in-Front-2-LaSilla-English.png",
+    "loteria-cards\\cards-01-06\\en\\print-4x6\\GreenLatinos-LoteriaCard-4x6in-Back-2-LaSilla-English.png",
+    "loteria-cards\\cards-01-06\\en\\print-4x6\\GreenLatinos-LoteriaCard-4x6in-Front-3-UnaVelita-English.png",
+    "loteria-cards\\cards-01-06\\en\\print-4x6\\GreenLatinos-LoteriaCard-4x6in-Back-3-UnaVelita-English.png",
+    "loteria-cards\\cards-01-06\\en\\print-4x6\\GreenLatinos-LoteriaCard-4x6in-Front-4-ElArcoiris-English.png",
+    "loteria-cards\\cards-01-06\\en\\print-4x6\\GreenLatinos-LoteriaCard-4x6in-Back-4-ElArcoiris-English.png",
+    "loteria-cards\\cards-01-06\\en\\print-4x6\\GreenLatinos-LoteriaCard-4x6in-Front-5-LaEnergia-English.png",
+    "loteria-cards\\cards-01-06\\en\\print-4x6\\GreenLatinos-LoteriaCard-4x6in-Back-5-LaEnergia-English.png",
+    "loteria-cards\\cards-01-06\\en\\print-4x6\\GreenLatinos-LoteriaCard-4x6in-Front-6-ElMenu-English.png",
+    "loteria-cards\\cards-01-06\\en\\print-4x6\\GreenLatinos-LoteriaCard-4x6in-Back-6-ElMenu-English.png",
+    "loteria-cards\\cards-07-12\\en\\print-4x6\\GreenLatinos-LoteriaCard-4x6in-Front-7-ElMetano-English.png",
+    "loteria-cards\\cards-07-12\\en\\print-4x6\\GreenLatinos-LoteriaCard-4x6in-Back-7-ElMetano-English.png",
+    "loteria-cards\\cards-07-12\\en\\print-4x6\\GreenLatinos-LoteriaCard-4x6in-Front-8-ElPlastico-English.png",
+    "loteria-cards\\cards-07-12\\en\\print-4x6\\GreenLatinos-LoteriaCard-4x6in-Back-8-ElPlastico-English.png",
+    "loteria-cards\\cards-07-12\\en\\print-4x6\\GreenLatinos-LoteriaCard-4x6in-Front-9-LaSalud-English(1).png",
+    "loteria-cards\\cards-07-12\\en\\print-4x6\\GreenLatinos-LoteriaCard-4x6in-Back-9-LaSalud-English(1).png",
+    "loteria-cards\\cards-07-12\\en\\print-4x6\\GreenLatinos-LoteriaCard-4x6in-Front-10-LaTransicionJusta-English.png",
+    "loteria-cards\\cards-07-12\\en\\print-4x6\\GreenLatinos-LoteriaCard-4x6in-Back-10-LaTransicionJusta-English.png",
+    "loteria-cards\\cards-07-12\\en\\social-4x5\\GreenLatinos-LoteriaCard-Social-5-LaJusticiaClimatica-English.png",
+    "loteria-cards\\cards-07-12\\en\\print-4x6\\GreenLatinos-LoteriaCard-4x6in-Front-12-LaDeforestacion-English.png",
+    "loteria-cards\\cards-07-12\\en\\print-4x6\\GreenLatinos-LoteriaCard-4x6in-Back-12-LaDeforestacion-English.png"
+  ],
+  "palettes": {
+    "01": {
+      "sky": "#FF5701",
+      "ground": "#5FA52D",
+      "seam": "#568B28",
+      "motif": [
+        "#2F2722",
+        "#FF2406",
+        "#BCBC30",
+        "#655B25",
+        "#AD9B30"
+      ]
+    },
+    "02": {
+      "sky": "#FF7A07",
+      "ground": "#945920",
+      "seam": "#2487C1",
+      "motif": [
+        "#B8732C",
+        "#AA6927",
+        "#251A1C",
+        "#30779C",
+        "#C7CFC6"
+      ]
+    },
+    "03": {
+      "sky": "#C17222",
+      "ground": "#FF3C0A",
+      "seam": "#3678BF",
+      "motif": [
+        "#DB8228",
+        "#424A64",
+        "#E6932C",
+        "#FA9B1F",
+        "#FF600F"
+      ]
+    },
+    "04": {
+      "sky": "#32A5A9",
+      "ground": "#4C8923",
+      "seam": "#9D8A2D",
+      "motif": [
+        "#34C4C9",
+        "#77D0D0",
+        "#54C7C7",
+        "#66B140",
+        "#6E2842"
+      ]
+    },
+    "05": {
+      "sky": "#23ACFE",
+      "ground": "#198018",
+      "seam": "#A8A9A5",
+      "motif": [
+        "#FFAF00",
+        "#84A684",
+        "#E1D18A",
+        "#3C5D2B",
+        "#77C1D2"
+      ]
+    },
+    "06": {
+      "sky": "#FF7E07",
+      "ground": "#94A604",
+      "seam": "#A180BF",
+      "motif": [
+        "#FF9F5B",
+        "#A08665",
+        "#5E4B68",
+        "#DDDD4F",
+        "#FF8B46"
+      ]
+    },
+    "07": {
+      "sky": "#1F78C0",
+      "ground": "#60AB2D",
+      "seam": "#2275B3",
+      "motif": [
+        "#1A64A2",
+        "#509732",
+        "#6F3214",
+        "#2A2D2A",
+        "#AB2008"
+      ]
+    },
+    "08": {
+      "sky": "#7033B2",
+      "ground": "#0183EF",
+      "seam": "#8948DA",
+      "motif": [
+        "#8CA6BE",
+        "#0067C2",
+        "#3A2348",
+        "#ABC1B2",
+        "#4E91C6"
+      ]
+    },
+    "09": {
+      "sky": "#28AFB4",
+      "ground": "#5EA32C",
+      "seam": "#CC6421",
+      "motif": [
+        "#397D55",
+        "#1A2B27",
+        "#E07C39",
+        "#A37430",
+        "#6EC8B6"
+      ]
+    },
+    "10": {
+      "sky": "#207BC4",
+      "ground": "#5FA730",
+      "seam": "#5A7814",
+      "motif": [
+        "#343818",
+        "#1C69A4",
+        "#F1BB5F",
+        "#2E8194",
+        "#DD9F36"
+      ]
+    },
+    "11": {
+      "sky": "#F04E23",
+      "ground": "#49B848",
+      "seam": "#F2C230",
+      "motif": []
+    },
+    "12": {
+      "sky": "#1E9FBE",
+      "ground": "#FC4D0C",
+      "seam": "#973D06",
+      "motif": [
+        "#1B8CA7",
+        "#F69B1E",
+        "#462312",
+        "#F86D12",
+        "#9B9D45"
+      ]
+    }
+  },
+  "generated_at": "2026-10-25T00:48:54+00:00",
+  "usage": {
+    "calls": 24,
+    "agents": {
+      "extractor:en": {
+        "model": "gpt-6-luna",
+        "input_tokens": 29515,
+        "uncached_input_tokens": 36,
+        "cached_tokens": 0,
+        "cache_write_tokens": 29479,
+        "output_tokens": 6676,
+        "reasoning_tokens": 4788,
+        "total_tokens": 36191,
+        "cost_usd": 0.00702648
+      },
+      "extractor:es": {
+        "model": "gpt-6-luna",
+        "input_tokens": 29305,
+        "uncached_input_tokens": 36,
+        "cached_tokens": 0,
+        "cache_write_tokens": 29269,
+        "output_tokens": 9421,
+        "reasoning_tokens": 7160,
+        "total_tokens": 38726,
+        "cost_usd": 0.00837273
+      }
+    },
+    "total_usd": 0.0153992,
+    "price_source": "https://openai.com/api/pricing/ (as presented in MGT 409 Lecture 11)"
+  },
+  "rules": {
+    "paper": "#EDEDE8",
+    "ink": "#2E2520",
+    "panel_ratio": 0.82,
+    "rules": [
+      "Cream paper ground with visible paper tooth; riso-style grain over the whole card.",
+      "Art panel bordered by a heavy dark-brown rule; card number top-left inside the panel.",
+      "Background inside the panel is a two-zone gradient with a soft blended horizon seam.",
+      "Motif is flat fill only: one uniform thick outline, no shading, no gradients, no text.",
+      "Card name in heavy condensed uppercase at the foot of the panel.",
+      "Footer outside the panel: LEARN MORE / greenlatinos.org and CONNECT WITH US / @greenlatinos.",
+      "Generated cards must NOT carry the GreenLatinos wordmark."
+    ]
+  }
+}

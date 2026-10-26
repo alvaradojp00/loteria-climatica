@@ -1,0 +1,101 @@
+{
+  "_note": "The manipulation patterns the agents name when a claim is rigged by construction. Naming the tactic teaches the pattern, which outlasts the correction of any single claim.",
+  "tactics": [
+    {
+      "key": "manufactured-debate",
+      "name": { "en": "Manufactured debate", "es": "Debate fabricado" },
+      "how_it_works": {
+        "en": "Presents a settled question as an open argument by giving a fringe position equal airtime, so the audience concludes the science is unsure.",
+        "es": "Presenta una pregunta ya resuelta como un debate abierto, dandole el mismo espacio a una postura marginal, para que uno concluya que la ciencia no esta segura."
+      },
+      "tell": {
+        "en": "'Scientists are still debating whether...' when they are not.",
+        "es": "'Los cientificos todavia debaten si...' cuando ya no lo debaten."
+      }
+    },
+    {
+      "key": "technically-true",
+      "name": { "en": "Technically true but incomplete", "es": "Cierto pero incompleto" },
+      "how_it_works": {
+        "en": "Uses a real fact stripped of the context that gives it meaning - a true number with the denominator removed, or a real event presented as a trend.",
+        "es": "Usa un dato real sin el contexto que le da sentido: un numero verdadero sin su denominador, o un hecho aislado presentado como tendencia."
+      },
+      "tell": {
+        "en": "A precise-sounding statistic with no baseline, timeframe or comparison.",
+        "es": "Una estadistica que suena precisa pero sin punto de comparacion ni periodo."
+      }
+    },
+    {
+      "key": "responsibility-shifting",
+      "name": { "en": "Responsibility shifting", "es": "Desvio de responsabilidad" },
+      "how_it_works": {
+        "en": "Moves the burden from the parties with the most power onto individuals or onto another country, so that collective action looks pointless.",
+        "es": "Mueve la carga de quienes tienen mas poder hacia las personas comunes o hacia otro pais, para que la accion colectiva parezca inutil."
+      },
+      "tell": {
+        "en": "'China pollutes more', 'it's your carbon footprint', 'just recycle'.",
+        "es": "'China contamina mas', 'es tu huella de carbono', 'con reciclar basta'."
+      }
+    },
+    {
+      "key": "conspiracy-bundling",
+      "name": { "en": "Conspiracy bundling", "es": "Empaquetado conspirativo" },
+      "how_it_works": {
+        "en": "Attaches the climate claim to a larger story about elites, control or hidden motives, so that rejecting it feels like naivety rather than accuracy.",
+        "es": "Amarra el tema climatico a una historia mas grande sobre elites, control o intenciones ocultas, para que rechazarla se sienta ingenuo."
+      },
+      "tell": {
+        "en": "The claim only makes sense if a very large number of people are coordinating in secret.",
+        "es": "La afirmacion solo funciona si muchisima gente se esta coordinando en secreto."
+      }
+    },
+    {
+      "key": "false-solution",
+      "name": { "en": "False solution", "es": "Solucion falsa" },
+      "how_it_works": {
+        "en": "Promotes a real technology far beyond its evidence so that continuing as normal looks responsible.",
+        "es": "Promueve una tecnologia real mucho mas alla de su evidencia para que seguir igual parezca responsable."
+      },
+      "tell": {
+        "en": "'We can keep burning it because X will capture it later.'",
+        "es": "'Podemos seguir quemandolo porque despues X lo va a capturar.'"
+      }
+    },
+    {
+      "key": "cultural-wedge",
+      "name": { "en": "Cultural wedge", "es": "Cuna cultural" },
+      "how_it_works": {
+        "en": "Frames climate action as an attack on your food, your faith, your work or your family, so defending the status quo feels like defending your people.",
+        "es": "Presenta la accion climatica como un ataque a tu comida, tu fe, tu trabajo o tu familia, para que defender lo de siempre se sienta como defender a los tuyos."
+      },
+      "tell": {
+        "en": "'They want to take away your...' attached to something cultural rather than an actual policy.",
+        "es": "'Te quieren quitar...' pegado a algo cultural y no a una politica real."
+      }
+    },
+    {
+      "key": "crisis-exploitation",
+      "name": { "en": "Crisis exploitation", "es": "Explotacion de la crisis" },
+      "how_it_works": {
+        "en": "Floods the hours after a disaster with claims, when people are frightened and verification is hardest.",
+        "es": "Inunda las horas despues de un desastre con afirmaciones, cuando la gente tiene miedo y verificar es mas dificil."
+      },
+      "tell": {
+        "en": "Confident causal claims within a day of a hurricane, fire or flood.",
+        "es": "Afirmaciones causales muy seguras al dia siguiente de un huracan, incendio o inundacion."
+      }
+    },
+    {
+      "key": "messenger-attack",
+      "name": { "en": "Attack the messenger", "es": "Ataque al mensajero" },
+      "how_it_works": {
+        "en": "Discredits the people reporting a finding rather than engaging the finding, usually by alleging they are paid.",
+        "es": "Desacredita a quien reporta un hallazgo en vez de discutir el hallazgo, normalmente diciendo que les pagan."
+      },
+      "tell": {
+        "en": "'They only say that because of the funding' with no claim about the evidence itself.",
+        "es": "'Lo dicen por el dinero', sin decir nada sobre la evidencia misma."
+      }
+    }
+  ]
+}

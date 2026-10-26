@@ -1,0 +1,11 @@
+{
+  "_README": "Human corrections applied after extraction, for cards the Verifier flagged. Each entry records what was changed, why, and who checked it against the source image. Genesis applies these and stamps the card's notes, so the deck never silently disagrees with the printed originals and the correction stays visible in the audit trail.",
+  "07": {
+    "reviewed_by": "Juan Pablo Alvarado",
+    "reason": "Extractor returned only the first line of a two-line myth. The printed card carries both sentences.",
+    "source": "assets/loteria-cards/cards-07-12/en/social-4x5/GreenLatinos-LoteriaCard-Social-1-ElMetano-English.png",
+    "fields": {
+      "myth.en": "ISN'T METHANE JUST NATURAL GAS? IT'S A CLEAN ENERGY SOURCE."
+    }
+  }
+}
