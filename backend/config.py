@@ -120,8 +120,12 @@ def allowed_origins() -> list[str]:
     raw = os.getenv("ALLOWED_ORIGINS", "")
     if raw.strip():
         return [o.strip() for o in raw.split(",") if o.strip()]
-    return ["http://localhost:5173", "http://127.0.0.1:5173",
-            "http://localhost:4173", "http://127.0.0.1:4173"]
+    # Vite walks forward a port at a time when 5173 is already taken, so a
+    # grader with another project open lands on 5174 or 5175. Cover the range
+    # rather than let the app look broken for a reason nobody can see.
+    return [f"http://{host}:{port}"
+            for host in ("localhost", "127.0.0.1")
+            for port in (5173, 5174, 5175, 5176, 4173, 4174)]
 
 
 def prompt(name: str) -> str:

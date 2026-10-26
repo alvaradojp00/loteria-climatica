@@ -278,6 +278,11 @@ status <code>draft</code>. Total cost <b>$0.0079</b>.</li>
 <p>Across the whole project the gates fired <b>{rejections} times</b>. That is the
 system's most useful property: it refuses its own work when the evidence does not carry it.</p>
 
+<p>The same pipeline, photographed mid-run on a second claim so the trace above can be
+seen rather than taken on trust — every step, every price, and a gate firing:</p>
+
+{img("taller_run", "A second run captured live in El Taller: Researcher (4 cited sources, $0.00468), Framer (family, lift 7, four frames rejected), Writer, Artist, then the Verifier rejecting on a claim/evidence mismatch — 'SOLAR DIDN'T CAUSE TEXAS'S BLACKOUT' against a source saying solar was 2% of units reporting outages — one rework pass, re-verification, and the Transcreator. Per-agent spend, $0.01042 total. The card was left an unapproved draft and removed afterwards, so the submitted deck stays at 54.", "78%")}
+
 {img("taller_panel", "El Taller, the operator surface: subscriber list, sending status, gap queue and the factory. Password-gated and not public.")}
 
 {img("ask", "La Comadre and La Contra on one surface. The green card is the line you can actually say — the field that makes the answer usable.")}

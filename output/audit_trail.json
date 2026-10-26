@@ -31963,5 +31963,454 @@
     },
     "message": "My uncle says today's heat is the same as it always was",
     "topic": "Heat waves"
+  },
+  {
+    "run_id": "25c6111e675b",
+    "lane": "taller",
+    "channel": "scheduler",
+    "events": [
+      {
+        "type": "agent_started",
+        "data": {
+          "agent": "maestra"
+        }
+      },
+      {
+        "type": "agent_started",
+        "data": {
+          "agent": "researcher"
+        }
+      },
+      {
+        "type": "spend",
+        "data": {
+          "agent": "researcher",
+          "call": {
+            "model": "gpt-6-luna",
+            "input_tokens": 36323,
+            "uncached_input_tokens": 31599,
+            "cached_tokens": 0,
+            "cache_write_tokens": 4724,
+            "output_tokens": 1861,
+            "reasoning_tokens": 1160,
+            "total_tokens": 38184,
+            "cost_usd": 0.0046809
+          },
+          "total_usd": 0.0046809,
+          "agents": {
+            "researcher": 0.0046809
+          }
+        }
+      },
+      {
+        "type": "agent_done",
+        "data": {
+          "agent": "researcher"
+        }
+      },
+      {
+        "type": "evidence_found",
+        "data": {
+          "count": 4,
+          "sources": [
+            "U.S. Department of Energy, “Solar Photovoltaic Hardening for Resilience – Winter Weather”",
+            "Pecan Street, “How Did Texas Solar Perform in a Snowstorm?”",
+            "Federal Energy Regulatory Commission, “Final Report on February 2021 Freeze Underscores Winterization Recommendations”",
+            "U.S. Department of Energy, “OES 2025 – Lithium Ion Battery Operating Experience Summary”"
+          ]
+        }
+      },
+      {
+        "type": "agent_started",
+        "data": {
+          "agent": "framer"
+        }
+      },
+      {
+        "type": "tool_called",
+        "data": {
+          "tool": "get_frame_guidance",
+          "topic": "Claim disputes whether solar panels and batteries are dangerous, principally attacking the belief that climate-related energy systems pose danger to the community. Evidence includes grid reliability and conditional battery safety risks, but no finding about human health or bodies. Audience: general mixed audience.",
+          "audience": "general mixed audience"
+        }
+      },
+      {
+        "type": "spend",
+        "data": {
+          "agent": "framer",
+          "call": {
+            "model": "gpt-6-luna",
+            "input_tokens": 4424,
+            "uncached_input_tokens": 252,
+            "cached_tokens": 0,
+            "cache_write_tokens": 4172,
+            "output_tokens": 852,
+            "reasoning_tokens": 426,
+            "total_tokens": 5276,
+            "cost_usd": 0.0009727
+          },
+          "total_usd": 0.0056536,
+          "agents": {
+            "researcher": 0.0046809,
+            "framer": 0.0009727
+          }
+        }
+      },
+      {
+        "type": "agent_done",
+        "data": {
+          "agent": "framer"
+        }
+      },
+      {
+        "type": "frame_selected",
+        "data": {
+          "frame": "family",
+          "lift": 7.0,
+          "rejected": [
+            "health: +11 en peligro, pero descartado por la evidencia: no hay un hallazgo de salud sobre cuerpos que permita escribirlo honestamente.",
+            "faith: +3 en peligro; sin ángulo de mayordomía/responsabilidad en la evidencia, y menor lift que familia (+7).",
+            "economy_jobs: −2 en peligro; además, la evidencia no contiene hallazgos de salarios, precios o empleo.",
+            "villain: +3 en peligro, pero la evidencia no documenta un actor específico y el estudio no recomienda este marco para audiencias generales."
+          ]
+        }
+      },
+      {
+        "type": "agent_started",
+        "data": {
+          "agent": "writer"
+        }
+      },
+      {
+        "type": "spend",
+        "data": {
+          "agent": "writer",
+          "call": {
+            "model": "gpt-6-luna",
+            "input_tokens": 2186,
+            "uncached_input_tokens": 126,
+            "cached_tokens": 0,
+            "cache_write_tokens": 2060,
+            "output_tokens": 1583,
+            "reasoning_tokens": 1343,
+            "total_tokens": 3769,
+            "cost_usd": 0.0010616
+          },
+          "total_usd": 0.0067152,
+          "agents": {
+            "researcher": 0.0046809,
+            "framer": 0.0009727,
+            "writer": 0.0010616
+          }
+        }
+      },
+      {
+        "type": "agent_done",
+        "data": {
+          "agent": "writer"
+        }
+      },
+      {
+        "type": "agent_started",
+        "data": {
+          "agent": "artist"
+        }
+      },
+      {
+        "type": "spend",
+        "data": {
+          "agent": "artist",
+          "call": {
+            "model": "gpt-6-luna",
+            "input_tokens": 906,
+            "uncached_input_tokens": 906,
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 2034,
+            "reasoning_tokens": 1357,
+            "total_tokens": 2940,
+            "cost_usd": 0.0011076
+          },
+          "total_usd": 0.0078228,
+          "agents": {
+            "researcher": 0.0046809,
+            "framer": 0.0009727,
+            "writer": 0.0010616,
+            "artist": 0.0011076
+          }
+        }
+      },
+      {
+        "type": "agent_done",
+        "data": {
+          "agent": "artist"
+        }
+      },
+      {
+        "type": "agent_started",
+        "data": {
+          "agent": "verifier"
+        }
+      },
+      {
+        "type": "spend",
+        "data": {
+          "agent": "verifier",
+          "call": {
+            "model": "gpt-6-luna",
+            "input_tokens": 1517,
+            "uncached_input_tokens": 126,
+            "cached_tokens": 0,
+            "cache_write_tokens": 1391,
+            "output_tokens": 1217,
+            "reasoning_tokens": 1087,
+            "total_tokens": 2734,
+            "cost_usd": 0.00079498
+          },
+          "total_usd": 0.00861778,
+          "agents": {
+            "researcher": 0.0046809,
+            "framer": 0.0009727,
+            "writer": 0.0010616,
+            "artist": 0.0011076,
+            "verifier": 0.00079498
+          }
+        }
+      },
+      {
+        "type": "agent_done",
+        "data": {
+          "agent": "verifier"
+        }
+      },
+      {
+        "type": "qa_rejected",
+        "data": {
+          "gate": "verifier",
+          "severity": "blocking",
+          "problems": [
+            "Check 2 — claim/evidence: “SOLAR DIDN'T CAUSE TEXAS'S BLACKOUT.” The evidence says solar accounted for 2% of generating units reporting outages, derates, or failures to start and that failures spanned generators; it does not establish that solar had no causal role. The headline is more categorical than the evidence supports."
+          ]
+        }
+      },
+      {
+        "type": "rework",
+        "data": {
+          "attempt": 1,
+          "content_ok": false,
+          "art_ok": true
+        }
+      },
+      {
+        "type": "agent_started",
+        "data": {
+          "agent": "writer"
+        }
+      },
+      {
+        "type": "spend",
+        "data": {
+          "agent": "writer",
+          "call": {
+            "model": "gpt-6-luna",
+            "input_tokens": 2259,
+            "uncached_input_tokens": 126,
+            "cached_tokens": 0,
+            "cache_write_tokens": 2133,
+            "output_tokens": 970,
+            "reasoning_tokens": 722,
+            "total_tokens": 3229,
+            "cost_usd": 0.00076422
+          },
+          "total_usd": 0.00938201,
+          "agents": {
+            "researcher": 0.0046809,
+            "framer": 0.0009727,
+            "writer": 0.00182583,
+            "artist": 0.0011076,
+            "verifier": 0.00079498
+          }
+        }
+      },
+      {
+        "type": "agent_done",
+        "data": {
+          "agent": "writer"
+        }
+      },
+      {
+        "type": "agent_started",
+        "data": {
+          "agent": "verifier"
+        }
+      },
+      {
+        "type": "spend",
+        "data": {
+          "agent": "verifier",
+          "call": {
+            "model": "gpt-6-luna",
+            "input_tokens": 1528,
+            "uncached_input_tokens": 126,
+            "cached_tokens": 0,
+            "cache_write_tokens": 1402,
+            "output_tokens": 809,
+            "reasoning_tokens": 744,
+            "total_tokens": 2337,
+            "cost_usd": 0.00059235
+          },
+          "total_usd": 0.00997436,
+          "agents": {
+            "researcher": 0.0046809,
+            "framer": 0.0009727,
+            "writer": 0.00182583,
+            "artist": 0.0011076,
+            "verifier": 0.00138733
+          }
+        }
+      },
+      {
+        "type": "agent_done",
+        "data": {
+          "agent": "verifier"
+        }
+      },
+      {
+        "type": "agent_started",
+        "data": {
+          "agent": "transcreator"
+        }
+      },
+      {
+        "type": "spend",
+        "data": {
+          "agent": "transcreator",
+          "call": {
+            "model": "gpt-6-luna",
+            "input_tokens": 702,
+            "uncached_input_tokens": 702,
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 757,
+            "reasoning_tokens": 473,
+            "total_tokens": 1459,
+            "cost_usd": 0.0004487
+          },
+          "total_usd": 0.01042306,
+          "agents": {
+            "researcher": 0.0046809,
+            "framer": 0.0009727,
+            "writer": 0.00182583,
+            "artist": 0.0011076,
+            "verifier": 0.00138733,
+            "transcreator": 0.0004487
+          }
+        }
+      },
+      {
+        "type": "agent_done",
+        "data": {
+          "agent": "transcreator"
+        }
+      },
+      {
+        "type": "final",
+        "data": {
+          "card": "55",
+          "name": "El Inversor",
+          "status": "draft",
+          "spend": 0.01042305
+        }
+      }
+    ],
+    "usage": {
+      "calls": 8,
+      "agents": {
+        "artist": {
+          "model": "gpt-6-luna",
+          "input_tokens": 906,
+          "uncached_input_tokens": 906,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 2034,
+          "reasoning_tokens": 1357,
+          "total_tokens": 2940,
+          "cost_usd": 0.0011076
+        },
+        "framer": {
+          "model": "gpt-6-luna",
+          "input_tokens": 4424,
+          "uncached_input_tokens": 252,
+          "cached_tokens": 0,
+          "cache_write_tokens": 4172,
+          "output_tokens": 852,
+          "reasoning_tokens": 426,
+          "total_tokens": 5276,
+          "cost_usd": 0.0009727
+        },
+        "researcher": {
+          "model": "gpt-6-luna",
+          "input_tokens": 36323,
+          "uncached_input_tokens": 31599,
+          "cached_tokens": 0,
+          "cache_write_tokens": 4724,
+          "output_tokens": 1861,
+          "reasoning_tokens": 1160,
+          "total_tokens": 38184,
+          "cost_usd": 0.0046809
+        },
+        "transcreator": {
+          "model": "gpt-6-luna",
+          "input_tokens": 702,
+          "uncached_input_tokens": 702,
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 757,
+          "reasoning_tokens": 473,
+          "total_tokens": 1459,
+          "cost_usd": 0.0004487
+        },
+        "verifier": {
+          "model": "gpt-6-luna",
+          "input_tokens": 3045,
+          "uncached_input_tokens": 252,
+          "cached_tokens": 0,
+          "cache_write_tokens": 2793,
+          "output_tokens": 2026,
+          "reasoning_tokens": 1831,
+          "total_tokens": 5071,
+          "cost_usd": 0.00138733
+        },
+        "writer": {
+          "model": "gpt-6-luna",
+          "input_tokens": 4445,
+          "uncached_input_tokens": 252,
+          "cached_tokens": 0,
+          "cache_write_tokens": 4193,
+          "output_tokens": 2553,
+          "reasoning_tokens": 2065,
+          "total_tokens": 6998,
+          "cost_usd": 0.00182583
+        }
+      },
+      "total_usd": 0.01042305,
+      "price_source": "https://openai.com/api/pricing/ (as presented in MGT 409 Lecture 11)"
+    },
+    "claim": "Los paneles solares que están instalando en el barrio son peligrosos; cuando hace frío dejan de funcionar y por eso se cayó la luz en Texas en 2021. Además, las baterías se sobrecalientan. No firmes n",
+    "card": "55",
+    "status": "draft",
+    "frame": "family",
+    "rejections": [
+      {
+        "type": "qa_rejected",
+        "data": {
+          "gate": "verifier",
+          "severity": "blocking",
+          "problems": [
+            "Check 2 — claim/evidence: “SOLAR DIDN'T CAUSE TEXAS'S BLACKOUT.” The evidence says solar accounted for 2% of generating units reporting outages, derates, or failures to start and that failures spanned generators; it does not establish that solar had no causal role. The headline is more categorical than the evidence supports."
+          ]
+        }
+      }
+    ]
   }
 ]
