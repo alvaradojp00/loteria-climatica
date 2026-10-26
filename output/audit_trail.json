@@ -32412,5 +32412,561 @@
         }
       }
     ]
+  },
+  {
+    "run_id": "a95904b7c5cd",
+    "lane": "comadre",
+    "channel": "web",
+    "events": [
+      {
+        "type": "agent_started",
+        "data": {
+          "agent": "comadre"
+        }
+      },
+      {
+        "type": "tool_called",
+        "data": {
+          "tool": "search_cards",
+          "query": "Can any single weather event be attributed to climate change? event attribution,",
+          "matched": [
+            "29",
+            "13",
+            "14",
+            "39",
+            "43"
+          ]
+        }
+      },
+      {
+        "type": "tool_called",
+        "data": {
+          "tool": "search_cards",
+          "query": "single extreme weather event attribution climate change can scientists say it wa",
+          "matched": [
+            "04",
+            "29",
+            "31",
+            "51",
+            "07"
+          ]
+        }
+      },
+      {
+        "type": "spend",
+        "data": {
+          "agent": "comadre",
+          "call": {
+            "model": "gpt-6-luna",
+            "input_tokens": 7602,
+            "uncached_input_tokens": 378,
+            "cached_tokens": 3803,
+            "cache_write_tokens": 3421,
+            "output_tokens": 505,
+            "reasoning_tokens": 255,
+            "total_tokens": 8107,
+            "cost_usd": 0.00075595
+          },
+          "total_usd": 0.00075595,
+          "agents": {
+            "comadre": 0.00075595
+          }
+        }
+      },
+      {
+        "type": "agent_done",
+        "data": {
+          "agent": "comadre"
+        }
+      },
+      {
+        "type": "final",
+        "data": {
+          "cards": [
+            "29"
+          ],
+          "tactic": null,
+          "cost_usd": 0.00075595
+        }
+      }
+    ],
+    "usage": {
+      "calls": 1,
+      "agents": {
+        "comadre": {
+          "model": "gpt-6-luna",
+          "input_tokens": 7602,
+          "uncached_input_tokens": 378,
+          "cached_tokens": 3803,
+          "cache_write_tokens": 3421,
+          "output_tokens": 505,
+          "reasoning_tokens": 255,
+          "total_tokens": 8107,
+          "cost_usd": 0.00075595
+        }
+      },
+      "total_usd": 0.00075595,
+      "price_source": "https://openai.com/api/pricing/ (as presented in MGT 409 Lecture 11)"
+    },
+    "message": "Can we attribute any single event to climate change?",
+    "topic": "Event attribution"
+  },
+  {
+    "run_id": "3092576978df",
+    "lane": "comadre",
+    "channel": "web",
+    "events": [
+      {
+        "type": "agent_started",
+        "data": {
+          "agent": "comadre"
+        }
+      },
+      {
+        "type": "tool_called",
+        "data": {
+          "tool": "search_cards",
+          "query": "Does warming level off even with continued emissions? Continued greenhouse gas e",
+          "matched": [
+            "14",
+            "16",
+            "15",
+            "19",
+            "21"
+          ]
+        }
+      },
+      {
+        "type": "tool_called",
+        "data": {
+          "tool": "search_sources",
+          "query": "continued carbon dioxide emissions warming does not stop level off temperature c",
+          "found": 6
+        }
+      },
+      {
+        "type": "spend",
+        "data": {
+          "agent": "comadre",
+          "call": {
+            "model": "gpt-6-luna",
+            "input_tokens": 7023,
+            "uncached_input_tokens": 378,
+            "cached_tokens": 5206,
+            "cache_write_tokens": 1439,
+            "output_tokens": 762,
+            "reasoning_tokens": 525,
+            "total_tokens": 7785,
+            "cost_usd": 0.00065074
+          },
+          "total_usd": 0.00065074,
+          "agents": {
+            "comadre": 0.00065074
+          }
+        }
+      },
+      {
+        "type": "agent_done",
+        "data": {
+          "agent": "comadre"
+        }
+      },
+      {
+        "type": "final",
+        "data": {
+          "cards": [],
+          "tactic": null,
+          "cost_usd": 0.00065074
+        }
+      }
+    ],
+    "usage": {
+      "calls": 1,
+      "agents": {
+        "comadre": {
+          "model": "gpt-6-luna",
+          "input_tokens": 7023,
+          "uncached_input_tokens": 378,
+          "cached_tokens": 5206,
+          "cache_write_tokens": 1439,
+          "output_tokens": 762,
+          "reasoning_tokens": 525,
+          "total_tokens": 7785,
+          "cost_usd": 0.00065074
+        }
+      },
+      "total_usd": 0.00065074,
+      "price_source": "https://openai.com/api/pricing/ (as presented in MGT 409 Lecture 11)"
+    },
+    "message": "Does warming level off even with continued emissions?",
+    "topic": "Continued emissions"
+  },
+  {
+    "run_id": "03d738f82064",
+    "lane": "comadre",
+    "channel": "web",
+    "events": [
+      {
+        "type": "agent_started",
+        "data": {
+          "agent": "comadre"
+        }
+      },
+      {
+        "type": "tool_called",
+        "data": {
+          "tool": "search_cards",
+          "query": "How have living standards changed since fossil fuel use expanded? Fossil fuels a",
+          "matched": [
+            "03",
+            "05",
+            "15",
+            "39",
+            "04"
+          ]
+        }
+      },
+      {
+        "type": "tool_called",
+        "data": {
+          "tool": "search_sources",
+          "query": "fossil fuel expansion industrialization living standards public health poverty q",
+          "found": 5
+        }
+      },
+      {
+        "type": "spend",
+        "data": {
+          "agent": "comadre",
+          "call": {
+            "model": "gpt-6-luna",
+            "input_tokens": 6897,
+            "uncached_input_tokens": 378,
+            "cached_tokens": 5110,
+            "cache_write_tokens": 1409,
+            "output_tokens": 591,
+            "reasoning_tokens": 316,
+            "total_tokens": 7488,
+            "cost_usd": 0.00056052
+          },
+          "total_usd": 0.00056052,
+          "agents": {
+            "comadre": 0.00056052
+          }
+        }
+      },
+      {
+        "type": "agent_done",
+        "data": {
+          "agent": "comadre"
+        }
+      },
+      {
+        "type": "final",
+        "data": {
+          "cards": [],
+          "tactic": null,
+          "cost_usd": 0.00056052
+        }
+      }
+    ],
+    "usage": {
+      "calls": 1,
+      "agents": {
+        "comadre": {
+          "model": "gpt-6-luna",
+          "input_tokens": 6897,
+          "uncached_input_tokens": 378,
+          "cached_tokens": 5110,
+          "cache_write_tokens": 1409,
+          "output_tokens": 591,
+          "reasoning_tokens": 316,
+          "total_tokens": 7488,
+          "cost_usd": 0.00056052
+        }
+      },
+      "total_usd": 0.00056052,
+      "price_source": "https://openai.com/api/pricing/ (as presented in MGT 409 Lecture 11)"
+    },
+    "message": "How have living standards changed since fossil fuel use expanded?",
+    "topic": "Living standards"
+  },
+  {
+    "run_id": "0fa706e655fc",
+    "lane": "comadre",
+    "channel": "web",
+    "events": [
+      {
+        "type": "agent_started",
+        "data": {
+          "agent": "comadre"
+        }
+      },
+      {
+        "type": "tool_called",
+        "data": {
+          "tool": "search_cards",
+          "query": "Can any single weather event be attributed to climate change? event attribution,",
+          "matched": [
+            "29",
+            "13",
+            "14",
+            "39",
+            "43"
+          ]
+        }
+      },
+      {
+        "type": "tool_called",
+        "data": {
+          "tool": "search_cards",
+          "query": "single extreme weather event attribution climate change can scientists say it wa",
+          "matched": [
+            "04",
+            "29",
+            "31",
+            "51",
+            "07"
+          ]
+        }
+      },
+      {
+        "type": "spend",
+        "data": {
+          "agent": "comadre",
+          "call": {
+            "model": "gpt-6-luna",
+            "input_tokens": 7602,
+            "uncached_input_tokens": 378,
+            "cached_tokens": 3803,
+            "cache_write_tokens": 3421,
+            "output_tokens": 505,
+            "reasoning_tokens": 255,
+            "total_tokens": 8107,
+            "cost_usd": 0.00075595
+          },
+          "total_usd": 0.00075595,
+          "agents": {
+            "comadre": 0.00075595
+          }
+        }
+      },
+      {
+        "type": "agent_done",
+        "data": {
+          "agent": "comadre"
+        }
+      },
+      {
+        "type": "final",
+        "data": {
+          "cards": [
+            "29"
+          ],
+          "tactic": null,
+          "cost_usd": 0.00075595
+        }
+      }
+    ],
+    "usage": {
+      "calls": 1,
+      "agents": {
+        "comadre": {
+          "model": "gpt-6-luna",
+          "input_tokens": 7602,
+          "uncached_input_tokens": 378,
+          "cached_tokens": 3803,
+          "cache_write_tokens": 3421,
+          "output_tokens": 505,
+          "reasoning_tokens": 255,
+          "total_tokens": 8107,
+          "cost_usd": 0.00075595
+        }
+      },
+      "total_usd": 0.00075595,
+      "price_source": "https://openai.com/api/pricing/ (as presented in MGT 409 Lecture 11)"
+    },
+    "message": "Can we attribute any single event to climate change?",
+    "topic": "Event attribution"
+  },
+  {
+    "run_id": "839c49c333fa",
+    "lane": "comadre",
+    "channel": "web",
+    "events": [
+      {
+        "type": "agent_started",
+        "data": {
+          "agent": "comadre"
+        }
+      },
+      {
+        "type": "tool_called",
+        "data": {
+          "tool": "search_cards",
+          "query": "Does warming level off even with continued emissions? Continued greenhouse gas e",
+          "matched": [
+            "14",
+            "16",
+            "15",
+            "19",
+            "21"
+          ]
+        }
+      },
+      {
+        "type": "tool_called",
+        "data": {
+          "tool": "search_sources",
+          "query": "continued carbon dioxide emissions warming does not stop level off temperature c",
+          "found": 6
+        }
+      },
+      {
+        "type": "spend",
+        "data": {
+          "agent": "comadre",
+          "call": {
+            "model": "gpt-6-luna",
+            "input_tokens": 7023,
+            "uncached_input_tokens": 378,
+            "cached_tokens": 5206,
+            "cache_write_tokens": 1439,
+            "output_tokens": 762,
+            "reasoning_tokens": 525,
+            "total_tokens": 7785,
+            "cost_usd": 0.00065074
+          },
+          "total_usd": 0.00065074,
+          "agents": {
+            "comadre": 0.00065074
+          }
+        }
+      },
+      {
+        "type": "agent_done",
+        "data": {
+          "agent": "comadre"
+        }
+      },
+      {
+        "type": "final",
+        "data": {
+          "cards": [],
+          "tactic": null,
+          "cost_usd": 0.00065074
+        }
+      }
+    ],
+    "usage": {
+      "calls": 1,
+      "agents": {
+        "comadre": {
+          "model": "gpt-6-luna",
+          "input_tokens": 7023,
+          "uncached_input_tokens": 378,
+          "cached_tokens": 5206,
+          "cache_write_tokens": 1439,
+          "output_tokens": 762,
+          "reasoning_tokens": 525,
+          "total_tokens": 7785,
+          "cost_usd": 0.00065074
+        }
+      },
+      "total_usd": 0.00065074,
+      "price_source": "https://openai.com/api/pricing/ (as presented in MGT 409 Lecture 11)"
+    },
+    "message": "Does warming level off even with continued emissions?",
+    "topic": "Continued emissions"
+  },
+  {
+    "run_id": "bcb54c8218db",
+    "lane": "comadre",
+    "channel": "web",
+    "events": [
+      {
+        "type": "agent_started",
+        "data": {
+          "agent": "comadre"
+        }
+      },
+      {
+        "type": "tool_called",
+        "data": {
+          "tool": "search_cards",
+          "query": "How have living standards changed since fossil fuel use expanded? Fossil fuels a",
+          "matched": [
+            "03",
+            "05",
+            "15",
+            "39",
+            "04"
+          ]
+        }
+      },
+      {
+        "type": "tool_called",
+        "data": {
+          "tool": "search_sources",
+          "query": "fossil fuel expansion industrialization living standards public health poverty q",
+          "found": 5
+        }
+      },
+      {
+        "type": "spend",
+        "data": {
+          "agent": "comadre",
+          "call": {
+            "model": "gpt-6-luna",
+            "input_tokens": 6897,
+            "uncached_input_tokens": 378,
+            "cached_tokens": 5110,
+            "cache_write_tokens": 1409,
+            "output_tokens": 591,
+            "reasoning_tokens": 316,
+            "total_tokens": 7488,
+            "cost_usd": 0.00056052
+          },
+          "total_usd": 0.00056052,
+          "agents": {
+            "comadre": 0.00056052
+          }
+        }
+      },
+      {
+        "type": "agent_done",
+        "data": {
+          "agent": "comadre"
+        }
+      },
+      {
+        "type": "final",
+        "data": {
+          "cards": [],
+          "tactic": null,
+          "cost_usd": 0.00056052
+        }
+      }
+    ],
+    "usage": {
+      "calls": 1,
+      "agents": {
+        "comadre": {
+          "model": "gpt-6-luna",
+          "input_tokens": 6897,
+          "uncached_input_tokens": 378,
+          "cached_tokens": 5110,
+          "cache_write_tokens": 1409,
+          "output_tokens": 591,
+          "reasoning_tokens": 316,
+          "total_tokens": 7488,
+          "cost_usd": 0.00056052
+        }
+      },
+      "total_usd": 0.00056052,
+      "price_source": "https://openai.com/api/pricing/ (as presented in MGT 409 Lecture 11)"
+    },
+    "message": "How have living standards changed since fossil fuel use expanded?",
+    "topic": "Living standards"
   }
 ]

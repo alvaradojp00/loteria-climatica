@@ -212,6 +212,50 @@ staffer anything to run; this one is the staffer's console.</p>
 onto an existing campaign, but the campaign's production pipeline redesigned so it
 runs at the speed of the problem.</p>
 
+<h3>Tested against the other side's chatbot</h3>
+<p>The clearest comparison is not with a fact-checker but with the thing this project
+exists to answer. <a href="https://alexepstein.ai">AlexAI</a> is Alex Epstein's chatbot —
+"pro-human answers to energy, climate, and environmental questions", from the author of
+<i>The Moral Case for Fossil Fuels</i>. It is well built: live web search, two to four
+queries and sixteen sources an answer, with named references. I put <b>its own three
+suggested prompts</b>, taken off its landing page so the test runs on its ground rather
+than mine, to both systems; transcript in <code>output/alexai_headtohead.json</code>.</p>
+<table>
+<tr><th>Its prompt</th><th>AlexAI</th><th>La Comadre</th></tr>
+<tr><td>"Can we attribute any single event to climate change?"</td>
+<td>"Probably not in any rigorous sense." Calls attribution science "a one-sided
+accounting trick" and "a prosecution brief", and questions a named researcher's motives.</td>
+<td>"Yes — but usually not as 'climate change alone caused it'," then the
+distinction between making an event <i>more likely</i> and causing it. Cites card 29.</td></tr>
+<tr><td>"Does warming level off even with continued emissions?"</td>
+<td><b>"Yes"</b> — CO₂ forcing is logarithmic, so "a very different picture than a world
+careening toward catastrophe."</td>
+<td><b>"No — not if CO₂ emissions keep rising."</b> Warming "broadly stops only when net
+CO₂ emissions reach about zero."</td></tr>
+<tr><td>"How have living standards changed since fossil fuel use expanded?"</td>
+<td>"That's not a coincidence. It's causation." Universal and undeniable.</td>
+<td>Large gains are real, "but they weren't the whole story, and the pollution and
+climate costs are real too."</td></tr>
+</table>
+<p><b>The second row is the finding.</b> AlexAI's premise is true — CO₂'s forcing really is
+logarithmic — and its conclusion does not follow: warming tracks <i>cumulative</i>
+emissions and halts near net zero, which is what La Comadre said. A true fact was used to
+carry a false answer, past two web searches and thirty-two sources. Retrieval was not the
+safeguard. This is precisely the claim/evidence mismatch the Verifier is built to reject,
+and it is worth noting that the lane which got it right has <i>no</i> web search at all.</p>
+<p>Two more differences, both structural rather than lucky. Where the deck had no coverage,
+La Comadre said so — "the deck and source library don't cover this point directly", and
+returned <code>answered: false</code> — rather than filling the gap with confident prose.
+And its first answer reached for the <i>family</i> register while AlexAI's reached for the
+villain frame, impugning a named scientist: the frame this project's own message test
+measured at <b>−1 overall and −15 with liberals</b>. The opposition is running, by
+instinct, the frame the data says loses.</p>
+<p>Said fairly: three prompts is not a study, the two systems are built for different jobs —
+AlexAI argues a policy position at length, La Comadre hands someone a sentence they can
+send — and AlexAI cites more sources per answer than this project's chat lane does. The
+comparison is of epistemic behaviour under adversarial questions, not of which is the
+better product. Each La Comadre answer cost between $0.00056 and $0.00076.</p>
+
 {img("home", "The landing page. 54 cards, bilingual throughout, with the mascot as the way in.")}
 
 <h2>3. The agents</h2>
