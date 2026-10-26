@@ -173,6 +173,13 @@ findable and the lock is made to hold instead: failed logins are throttled to
 **5 attempts per client per 15 minutes**, and the gate reports which of the two
 problems you have — a wrong password, or a lockout.
 
+That default is local-only by construction. `ALLOWED_ORIGINS` is set exactly
+when the app has been pointed at a real frontend, so once it is present an
+unset `ADMIN_PASSWORD` **fails closed with a 503** and the default stops being
+accepted at all. A fresh clone on your laptop sets no origins, so it keeps
+working; a deploy cannot inherit the password printed above. Sessions expire
+after **8 hours**.
+
 It asks for a password, which is `ADMIN_PASSWORD` in `.env` (default
 `loteria-admin` when unset — change it). The session token is held in the
 browser and in server memory, so restarting the backend signs everyone out.

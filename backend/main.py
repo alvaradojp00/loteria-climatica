@@ -46,6 +46,21 @@ app.add_middleware(
 )
 
 
+@app.middleware("http")
+async def security_headers(request: Request, call_next):
+    """Headers that cost nothing and close the cheap attacks.
+
+    The operator pages list real contact details, so the referrer is kept off
+    outbound links and the content type is never re-sniffed.
+    """
+    resp = await call_next(request)
+    resp.headers["X-Content-Type-Options"] = "nosniff"
+    resp.headers["X-Frame-Options"] = "DENY"
+    resp.headers["Referrer-Policy"] = "no-referrer"
+    resp.headers["Cross-Origin-Opener-Policy"] = "same-origin"
+    return resp
+
+
 # The original card artwork, served so the deck page can show cards 1-12 as
 # they were actually printed.
 app.mount("/assets", StaticFiles(directory=str(ASSETS)), name="assets")
@@ -57,7 +72,20 @@ app.mount("/assets", StaticFiles(directory=str(ASSETS)), name="assets")
 # unreviewed drafts. It is not for the public. The password lives in .env; the
 # token is in-memory, so restarting the server logs everyone out.
 
-_SESSIONS: set[str] = set()
+# token -> the moment it stops being valid. A session that never expires is a
+# password that leaks once and works forever.
+_SESSIONS: dict[str, float] = {}
+SESSION_TTL_SECONDS = 8 * 3600
+
+
+def _session_ok(token: str) -> bool:
+    """True if the token is live. Expired tokens are dropped on the way past."""
+    if not token:
+        return False
+    now = time.time()
+    for dead in [t for t, exp in _SESSIONS.items() if exp <= now]:
+        _SESSIONS.pop(dead, None)
+    return token in _SESSIONS
 
 # Hiding the login URL is not a security control -- the password is. So the
 # door is allowed to be findable, and the lock is made to hold: failed
@@ -67,8 +95,26 @@ MAX_ATTEMPTS = 5
 WINDOW_SECONDS = 900
 
 
+DEFAULT_ADMIN_PASSWORD = "loteria-admin"
+
+
 def admin_password() -> str:
-    return os.getenv("ADMIN_PASSWORD", "loteria-admin")
+    """The operator password.
+
+    A documented default is right for a graded clone and wrong for anything
+    reachable from the internet, so it is allowed only in the local case.
+    ALLOWED_ORIGINS is set exactly when the app has been pointed at a real
+    frontend, which makes it a reliable "this is deployed" signal: in that
+    case an unset ADMIN_PASSWORD fails closed rather than quietly shipping a
+    password that is printed in the README.
+    """
+    pw = os.getenv("ADMIN_PASSWORD")
+    if pw:
+        return pw
+    if os.getenv("ALLOWED_ORIGINS", "").strip():
+        raise HTTPException(
+            503, "ADMIN_PASSWORD must be set before this app is exposed publicly")
+    return DEFAULT_ADMIN_PASSWORD
 
 
 def _throttle(client: str) -> None:
@@ -97,12 +143,12 @@ def admin_login(req: LoginRequest, request: Request) -> dict:
         raise HTTPException(401, "wrong password")
     _ATTEMPTS.pop(client, None)
     token = secrets.token_urlsafe(24)
-    _SESSIONS.add(token)
+    _SESSIONS[token] = time.time() + SESSION_TTL_SECONDS
     return {"token": token, "default_password": not os.getenv("ADMIN_PASSWORD")}
 
 
 def require_admin(x_admin_token: str = Header(default="")) -> str:
-    if x_admin_token not in _SESSIONS:
+    if not _session_ok(x_admin_token):
         raise HTTPException(401, "admin session required")
     return x_admin_token
 
@@ -123,7 +169,7 @@ def get_resources(include_pending: bool = False,
     so the public page never shows an unreviewed link.
     """
     data = json.loads((DATA / "resources.json").read_text(encoding="utf-8"))
-    if not (include_pending and x_admin_token in _SESSIONS):
+    if not (include_pending and _session_ok(x_admin_token)):
         data["items"] = [i for i in data["items"] if not i.get("pending")]
     return data
 
@@ -166,14 +212,14 @@ def get_tablas(count: int = Query(6, ge=1, le=20), seed: int | None = None) -> d
 # ------------------------------------------------------------------ models
 
 class ChatRequest(BaseModel):
-    message: str = Field(min_length=1)
-    history: list[dict] = Field(default_factory=list)
+    message: str = Field(min_length=1, max_length=4000)
+    history: list[dict] = Field(default_factory=list, max_length=40)
     channel: str = "web"
     user: str = "web-anon"
 
 
 class ContraRequest(BaseModel):
-    material: str = Field(min_length=1)
+    material: str = Field(min_length=1, max_length=20000)
     defend: bool = True
     user: str = "web-anon"
 
@@ -253,8 +299,8 @@ async def chat(req: ChatRequest) -> dict:
 
 
 class AskRequest(BaseModel):
-    message: str = Field(min_length=1)
-    history: list[dict] = Field(default_factory=list)
+    message: str = Field(min_length=1, max_length=4000)
+    history: list[dict] = Field(default_factory=list, max_length=40)
     channel: str = "web"
     user: str = "web-anon"
 
@@ -320,7 +366,7 @@ async def whatsapp(payload: dict) -> dict:
 async def taller_stream(claim: str, gap_id: str | None = None,
                         token: str = Query("")) -> StreamingResponse:
     # EventSource cannot set headers, so the token travels as a query param.
-    if token not in _SESSIONS:
+    if not _session_ok(token):
         raise HTTPException(401, "admin session required")
     """Mint a card and stream the mesh working: the live dashboard."""
     queue: asyncio.Queue = asyncio.Queue()

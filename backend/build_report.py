@@ -430,10 +430,20 @@ numbers and ZIPs, volunteered by a community with specific reasons to be careful
 lists. The defences are structural, not promised: consent stored with the wording the
 person agreed to and a timestamp; unsubscribe as a real delete, not a flag; a token on
 every row from creation; one export, behind the password; and a single audience builder
-that no send path can bypass. The remaining exposure is honest — local SQLite with no
-encryption at rest, and a default admin password that ships in the README. Adequate for
-a course project with two test rows, not for a real list; <code>DEPLOY.md</code> makes
-changing it a pre-launch checklist item.</p>
+that no send path can bypass.</p>
+<p>The console in front of it is hardened to match: <code>compare_digest</code> on the
+password, five attempts per client per fifteen minutes, an <b>eight-hour session
+expiry</b> (a session that never ends is a password that leaks once and works forever),
+capped request bodies that bound what a stranger can spend of the key in one call, and
+<code>nosniff</code> / <code>DENY</code> / <code>no-referrer</code> headers.</p>
+<p>The documented default password is the interesting case: a clone needs one, the public
+internet must not have it. <code>ALLOWED_ORIGINS</code> is set exactly when the app has
+been pointed at a real frontend, so it is a reliable "this is deployed" signal and the
+default is honoured only in its absence. Measured, with origins configured: no
+<code>ADMIN_PASSWORD</code> gives <b>503</b>, the README default gives <b>401</b>, a real
+password gives 200 — it fails closed rather than quietly shipping a password printed in
+this repository. Still open, plainly: SQLite with no encryption at rest, and sessions in
+process memory. Both are on the <code>DEPLOY.md</code> pre-launch checklist.</p>
 
 <h3>The gates, in practice</h3>
 <p>Of 42 generated cards, <b>23 were held</b> by the Verifier at least once. The objections
