@@ -201,6 +201,11 @@ chosen and the frames it rejected, with the measurement that ruled each one out.
 <p><b>2. The deck is an output, not a dataset.</b> The system listens to what people
 actually ask, notices what no card answers, and manufactures the missing card —
 with cited evidence, reviewed by a human before publication.</p>
+<p><b>3. It is built for the organiser, not only the reader.</b> The public site is
+half the system. Behind a password sits the workflow a campaign actually needs — a
+consented contact list, an audience builder, an approvals queue and the gap queue that
+decides what gets made next. None of the tools named above hands a communications
+staffer anything to run; this one is the staffer's console.</p>
 </div>
 
 <p>This is the course's "AI-maxxing" argument applied literally: not a chatbot bolted
@@ -281,7 +286,28 @@ system's most useful property: it refuses its own work when the evidence does no
 <p>The same pipeline, photographed mid-run on a second claim so the trace above can be
 seen rather than taken on trust — every step, every price, and a gate firing:</p>
 
-{img("taller_run", "A second run captured live in El Taller: Researcher (4 cited sources, $0.00468), Framer (family, lift 7, four frames rejected), Writer, Artist, then the Verifier rejecting on a claim/evidence mismatch — 'SOLAR DIDN'T CAUSE TEXAS'S BLACKOUT' against a source saying solar was 2% of units reporting outages — one rework pass, re-verification, and the Transcreator. Per-agent spend, $0.01042 total. The card was left an unapproved draft and removed afterwards, so the submitted deck stays at 54.", "78%")}
+{img("taller_run", "A second run captured live in El Taller: Researcher (4 cited sources, $0.00468), Framer (family, lift 7, four frames rejected), Writer, Artist, then the Verifier rejecting on a claim/evidence mismatch — 'SOLAR DIDN'T CAUSE TEXAS'S BLACKOUT' against a source saying solar was 2% of units reporting outages — one rework pass, re-verification, and the Transcreator. Per-agent spend, $0.01042 total. The card was left an unapproved draft and removed afterwards, so the submitted deck stays at 54.", "100%")}
+
+<h3>The operator layer</h3>
+<p>El Taller is the half of the project that makes it an organising tool rather than a
+demo. It is gated server-side, not merely hidden, and it holds four things:</p>
+<ul>
+<li><b>The list.</b> Signups with consent recorded as the exact wording agreed to and
+when, an unsubscribe token issued at creation, and a gated CSV export.</li>
+<li><b>The audience builder.</b> One function decides who is in a send, filtered by
+channel and language. SMS consent is separate from email, so a blast
+<i>cannot</i> reach somebody who did not opt in to that channel — the list handed to the
+sender already excludes them.</li>
+<li><b>The gap queue.</b> Live demand scores and the cadence gate that decides whether
+the factory runs weekly or monthly.</li>
+<li><b>Approvals.</b> Nothing the agents produce — a card, or a link the weekly
+librarian sweep proposed — reaches the public site until a person approves it.</li>
+</ul>
+<p>Email and SMS are deliberately dormant plug-ins: <code>senders.py</code> reports what
+each channel needs but wires no provider call, so the workflow today is export-and-send.
+What each would require before a first send — SPF/DKIM, an unsubscribe link and postal
+address; A2P 10DLC registration and automatic STOP handling — is recorded in the
+interface rather than discovered later.</p>
 
 {img("taller_panel", "El Taller, the operator surface: subscriber list, sending status, gap queue and the factory. Password-gated and not public.")}
 
@@ -398,6 +424,17 @@ to our own metric — the moment "demand" became a target, it needed a floor.</p
 <code>BudgetExceeded</code> per run and per day, and rework is capped at two passes
 before a card stops as <code>needs_human</code>. Agents cannot negotiate with a counter.</p>
 
+<h3>Threat 4 — the subscriber list</h3>
+<p>The riskiest data here is not the model's: it is people's names, emails, phone
+numbers and ZIPs, volunteered by a community with specific reasons to be careful about
+lists. The defences are structural, not promised: consent stored with the wording the
+person agreed to and a timestamp; unsubscribe as a real delete, not a flag; a token on
+every row from creation; one export, behind the password; and a single audience builder
+that no send path can bypass. The remaining exposure is honest — local SQLite with no
+encryption at rest, and a default admin password that ships in the README. Adequate for
+a course project with two test rows, not for a real list; <code>DEPLOY.md</code> makes
+changing it a pre-launch checklist item.</p>
+
 <h3>The gates, in practice</h3>
 <p>Of 42 generated cards, <b>23 were held</b> by the Verifier at least once. The objections
 were specific, not pedantic: a US heat-deaths figure that omitted "contiguous"; a card
@@ -419,6 +456,12 @@ ready for review, instead of a blank page."</li>
 <li><b>Frame discipline.</b> Every generated card records its frame, the measured lift, and
 the frames rejected with the number that ruled each out. Distribution:
 {", ".join(f"{k} {v}" for k, v in sorted(frames.items(), key=lambda kv: -kv[1]))}.</li>
+<li><b>Newly possible work.</b> The rubric counts work that was not possible before, and
+this is the clearest instance: a two-person communications team can now see what their
+audience is actually asking, have the missing card drafted with its evidence, approve it,
+and send it to a consented, language-segmented list — without a designer, a researcher or
+a database person in the loop. That sequence did not previously exist at any price the
+organisation could pay.</li>
 <li><b>Refusal rate.</b> {rejections} gate rejections across {len(runs)} runs. A system that
 refuses its own output is doing the work.</li>
 </ul>

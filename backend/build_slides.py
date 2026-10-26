@@ -55,7 +55,7 @@ HTML = f"""<!doctype html>
   .reveal .stat {{ display:inline-block; margin:0 1.4em .6em 0; }}
   .reveal .stat b {{ display:block; font-size:2em; line-height:1; color:var(--orange); }}
   .reveal .stat span {{ font-size:.5em; text-transform:uppercase; letter-spacing:.1em; opacity:.65; }}
-  .reveal .two {{ display:grid; grid-template-columns:1fr 1fr; gap:1.2em; align-items:center; }}
+  .reveal .two {{ display:grid; grid-template-columns:1fr 1fr; gap:1.2em; align-items:start; }}
   .reveal img.shot {{ width:100%; border-radius:6px; box-shadow:0 6px 24px rgba(0,0,0,.18); }}
   .reveal .quote {{ background:var(--paper); border-left:5px solid var(--amber);
                     padding:.5em .8em; font-size:.68em; }}
@@ -152,10 +152,20 @@ HTML = f"""<!doctype html>
 
 <!-- 6 -->
 <section>
-  <h2>It works</h2>
-  <img class="shot" src="{shot('ask')}" alt="La Comadre answering">
-  <p class="muted">Explanation, the named technique, and the line you can actually say —
-  in whichever language you wrote in.</p>
+  <h2>It works — both halves</h2>
+  <div class="two">
+    <div>
+      <img class="shot" src="{shot('ask')}" alt="La Comadre answering">
+      <p class="muted"><b>The public side.</b> Explanation, the named technique, and the
+      line you can actually say, in whichever language you wrote in.</p>
+    </div>
+    <div>
+      <img class="shot" src="{shot('taller_panel')}" alt="El Taller, the operator console">
+      <p class="muted"><b>The operator side</b>, password-gated. A consented list, an
+      audience builder that <i>cannot</i> reach anyone who did not opt in, the gap queue,
+      and approvals. An organising tool, not a demo.</p>
+    </div>
+  </div>
 </section>
 
 <!-- 7 -->
